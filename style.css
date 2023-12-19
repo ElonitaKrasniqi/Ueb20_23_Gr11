@@ -1,0 +1,28 @@
+.navBar{
+    display: inline-block;
+    margin-bottom: 20px;
+    width: 100%;
+    height: auto;
+    position:fixed;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.541);
+}
+
+ul li{
+    list-style-type: none;
+}
+
+.navBar a{
+    text-decoration: none;
+    color: white;
+}
+.navBar nav li{
+    padding: 10px;
+    margin: 20px;
+    display: inline-block;
+}
+#hamMenu{
+    visibility: hidden;
+}
