@@ -26,3 +26,10 @@ ul li{
 #hamMenu{
     visibility: hidden;
 }
+body{
+    background-image: url('https://img.freepik.com/free-photo/top-view-milk-white-chocolate-copy-space_23-2148238696.jpg?w=1060&t=st=1699210498~exp=1699211098~hmac=3b338b9e938ede4d10294a7e63ebdffc3d27fd03c4401c5017a00ee7afa8cba8');
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
