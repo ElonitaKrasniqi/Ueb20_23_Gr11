@@ -94,3 +94,14 @@ ul li{
     flex-direction: row;
     align-items: center;
 }
+.bodyIndex{
+    background-image: url('./Pics/menuBodyFoto.avif');
+    background-blend-mode: multiply;
+    background-color: rgba(0, 0, 0, 0.6);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 825px; 
+    margin: 0;
+}
