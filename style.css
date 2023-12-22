@@ -26,14 +26,16 @@ ul li{
 #hamMenu{
     visibility: hidden;
 }
-body{
-    background-image: url('C:\Users\OS\OneDrive\Desktop\Restaurant_website\Restaurant-website\Pics\menuBodyFoto.avif');
-    width: 100%;
+.menuHead{
+    background-image: url('./Pics/Restaurant-Trends.jpg');
+    background-blend-mode: multiply;
+    background-color: rgba(0, 0, 0, 0.6);
     background-repeat: no-repeat;
     background-size: cover;
-}
-.menuBody{
-    background-image: url('https://img.freepik.com/free-photo/roasted-pork-steak-dark-wooden-surface_1150-44364.jpg');
+    background-position: center;
+    background-attachment: fixed;
+    height: 825px; 
+    margin: 0;
 }
 
 .menuLogo{
@@ -49,18 +51,46 @@ body{
 .menuLogo img{ 
     border-style: solid;
     border-color: white;
+    border-radius: 15px;
     width: 395px;
     height: 395px;
-    background-attachment: fixed;  
+    background-attachment: scroll;  
 }
 .menuLogo_h1{
    margin-top: 110px;
 }
 .hidden{
+    color: black;
+}
+.hidden {
+    width: 300px; 
+    padding: 20px;
+    margin: 10px;
+    background-color: #f2f2f2;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    height: 500px;
+    overflow:scroll;
+}
+
+.hidden h2 {
+    color: #333;
+}
+
+.food-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.food-item {
+    margin: 5px 0;
+    color: #666;
+    font-style: helvetica;
+    font-weight: bold;
+}
+.Container_hidden{
     display: flex;
-    justify-content: center;
+    flex-direction: row;
     align-items: center;
-    text-align: justify;
-    color: white;
-    margin-top: 80px;
 }
