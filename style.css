@@ -50,8 +50,17 @@ body{
     border-style: solid;
     border-color: white;
     width: 395px;
-    height: 395px;  
+    height: 395px;
+    background-attachment: fixed;  
 }
 .menuLogo_h1{
    margin-top: 110px;
+}
+.hidden{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    color: white;
+    margin-top: 80px;
 }
