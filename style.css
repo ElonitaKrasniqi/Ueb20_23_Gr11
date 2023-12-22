@@ -95,7 +95,7 @@ ul li{
     align-items: center;
 }
 .bodyIndex{
-    background-image: url('./Pics/menuBodyFoto.avif');
+    background-image: url('https://img.freepik.com/free-photo/roasted-pork-steak-dark-wooden-surface_1150-44364.jpg');
     background-blend-mode: multiply;
     background-color: rgba(0, 0, 0, 0.6);
     background-repeat: no-repeat;
