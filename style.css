@@ -26,7 +26,7 @@ ul li{
 #hamMenu{
     visibility: hidden;
 }
-.menuHead{
+.menuBody{
     background-image: url('./Pics/Restaurant-Trends.jpg');
     background-blend-mode: multiply;
     background-color: rgba(0, 0, 0, 0.6);
