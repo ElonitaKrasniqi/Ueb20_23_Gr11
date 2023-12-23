@@ -23,6 +23,7 @@ ul li{
     margin: 20px;
     display: inline-block;
 }
+
 #hamMenu{
     visibility: hidden;
 }
@@ -114,7 +115,7 @@ ul li{
     justify-content: space-evenly;
 }
 .bodyIndex{
-    background-image: url('https://img.freepik.com/free-photo/roasted-pork-steak-dark-wooden-surface_1150-44364.jpg');
+    background-image: url('/Pics/foto33.jpg');
     background-blend-mode: multiply;
     background-color: rgba(0, 0, 0, 0.6);
     background-repeat: no-repeat;
