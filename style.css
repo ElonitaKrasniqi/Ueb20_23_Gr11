@@ -117,12 +117,12 @@ i {
 .Container_hidden{
     
     display: flex;
-    flex-direction: row;
+    flex-direction: row;s
     align-items: center;
     justify-content: space-evenly;
 }
 .bodyIndex{
-    background-image: url('/Pics/foto33.jpg');
+    background-image: url('./Pics/foto33.jpg');
     background-blend-mode: multiply;
     background-color: rgba(0, 0, 0, 0.6);
     background-repeat: no-repeat;
