@@ -3,8 +3,10 @@
     margin-bottom: 20px;
     width: 100%;
     height: auto;
+    position:fixed;
     left: 0;
     top: 0;
+    z-index: 1;
     background-color: rgba(0, 0, 0, 0.541);
 }
 
@@ -32,7 +34,7 @@ i {
 #hamMenu{
     visibility: hidden;
 }
-.menubody_container1{
+.menuBody{
     background-image: url('./Pics/Restaurant-Trends.jpg');
     background-blend-mode: multiply;
     background-color: rgba(0, 0, 0, 0.6);
@@ -58,13 +60,16 @@ i {
     border-style: solid;
     border-color: white;
     border-radius: 15px;
-    margin-top: 30px;
     width: 395px;
     height: 395px;
     background-attachment: scroll;  
 }
-
-
+.menuLogo_h1{
+   margin-top: 110px;
+}
+.hidden{
+    color: black;
+}
 .hidden {
     width: 375px; 
     padding: 20px;
@@ -74,6 +79,7 @@ i {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
     height: 500px;
+<<<<<<< HEAD
     overflow: hidden;
     flex-shrink: 0;
     background-blend-mode: multiply;
@@ -83,6 +89,9 @@ i {
 }
 .hidden:hover{
     overflow-y: scroll;
+=======
+    overflow: auto;
+>>>>>>> 956963e5ef43847ca8d216b57874e35a72ff5a2c
 }
 .hidden::-webkit-scrollbar {
     width: 5px;
@@ -99,7 +108,7 @@ i {
     font-family: Helvetica, sans-serif;
     margin-bottom: 7px;
     border-bottom: 2px solid black;
-    color: #f2f2f2;
+    color: #333;
 }
 
 .food-list {
@@ -110,7 +119,7 @@ i {
 
 .food-item {
     margin: 15px 0;
-    color: #f2f2f2;
+    color: #444;
     border-bottom: 2px solid #ddd; /* Border between items */
     padding-bottom: 12px;
     position: relative;
@@ -118,7 +127,7 @@ i {
 }
 
 .Container_hidden{
-    padding-top: 110px;
+    
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -131,20 +140,21 @@ i {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    background-attachment: fixed;
+    background-attachment:fixed ;
     height: 825px; 
     margin: 0;
+   
 }
 .Container_hidden2{
-    padding-top: 57px;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
-    
 }
-.menuLogo_div{
+
+.wd{
     width: 100%;
+<<<<<<< HEAD
     height: 300px;
     display: flex;
     flex-direction: column;
@@ -174,3 +184,10 @@ i {
     overflow: hidden; /* Hide the overflow to ensure a perfect circle */
     position: relative;
   }
+=======
+    height: 250px;
+    opacity: 0.9;
+    background-color: white;
+    padding: 50px;
+}
+>>>>>>> 956963e5ef43847ca8d216b57874e35a72ff5a2c
