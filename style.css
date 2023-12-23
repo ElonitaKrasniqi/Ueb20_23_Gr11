@@ -79,7 +79,6 @@ i {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
     height: 500px;
-<<<<<<< HEAD
     overflow: hidden;
     flex-shrink: 0;
     background-blend-mode: multiply;
@@ -89,9 +88,6 @@ i {
 }
 .hidden:hover{
     overflow-y: scroll;
-=======
-    overflow: auto;
->>>>>>> 956963e5ef43847ca8d216b57874e35a72ff5a2c
 }
 .hidden::-webkit-scrollbar {
     width: 5px;
@@ -154,7 +150,6 @@ i {
 
 .wd{
     width: 100%;
-<<<<<<< HEAD
     height: 300px;
     display: flex;
     flex-direction: column;
@@ -178,16 +173,9 @@ i {
     
 }
 .circle_Photo{
-    width: 100px; /* Set your desired width */
-    height: 100px; /* Set your desired height */
-    border-radius: 50%; /* Make it a circle by setting border-radius to 50% */
-    overflow: hidden; /* Hide the overflow to ensure a perfect circle */
+    width: 100px; 
+    height: 100px; 
+    border-radius: 50%; 
+    overflow: hidden; 
     position: relative;
   }
-=======
-    height: 250px;
-    opacity: 0.9;
-    background-color: white;
-    padding: 50px;
-}
->>>>>>> 956963e5ef43847ca8d216b57874e35a72ff5a2c
