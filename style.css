@@ -63,7 +63,7 @@ ul li{
     color: black;
 }
 .hidden {
-    width: 300px; 
+    width: 375px; 
     padding: 20px;
     margin: 10px;
     background-color: #f2f2f2;
@@ -71,28 +71,47 @@ ul li{
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
     height: 500px;
-    overflow:scroll;
+    overflow: auto;
 }
-
+.hidden::-webkit-scrollbar {
+    width: 5px;
+}
+.hidden::-webkit-scrollbar-thumb {
+    background: linear-gradient(to right, #5c7f89, #3e606f); 
+    border-radius: 5px;
+}
+.hidden::-webkit-scrollbar-track {
+    background-color: #eee; 
+    border-radius: 5px;
+}
 .hidden h2 {
+    font-family: Helvetica, sans-serif;
+    margin-bottom: 7px;
+    border-bottom: 2px solid black;
     color: #333;
 }
 
 .food-list {
     list-style-type: none;
     padding: 0;
+    margin: 0;
 }
 
 .food-item {
-    margin: 5px 0;
-    color: #666;
-    font-style: helvetica;
-    font-weight: bold;
+    margin: 15px 0;
+    color: #444;
+    border-bottom: 2px solid #ddd; /* Border between items */
+    padding-bottom: 12px;
+    position: relative;
+    transition: background-color 0.3s;
 }
+
 .Container_hidden{
+    
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: space-evenly;
 }
 .bodyIndex{
     background-image: url('https://img.freepik.com/free-photo/roasted-pork-steak-dark-wooden-surface_1150-44364.jpg');
@@ -104,4 +123,10 @@ ul li{
     background-attachment: fixed;
     height: 825px; 
     margin: 0;
+}
+.Container_hidden2{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
 }
