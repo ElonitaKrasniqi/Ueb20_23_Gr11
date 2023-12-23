@@ -79,6 +79,7 @@ i {
     background-blend-mode: multiply;
     background-color: #232323;
     opacity: 0.6;
+    box-shadow: 5px 5px rgb(55, 114, 42);
 }
 .hidden:hover{
     overflow-y: scroll;
@@ -166,3 +167,10 @@ i {
     width: 100%;
     
 }
+.circle_Photo{
+    width: 100px; /* Set your desired width */
+    height: 100px; /* Set your desired height */
+    border-radius: 50%; /* Make it a circle by setting border-radius to 50% */
+    overflow: hidden; /* Hide the overflow to ensure a perfect circle */
+    position: relative;
+  }
