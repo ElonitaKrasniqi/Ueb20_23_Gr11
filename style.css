@@ -241,7 +241,7 @@ blockquote {
   
   blockquote:after {
     content: '”';
-    right: -80px; 
+    right: -60px; 
     bottom: 16px; 
   }
   
