@@ -203,31 +203,48 @@ i {
     justify-content: center;
     margin-top: 50px;
     width: auto;
-    height: 200px;
-    border-color: white;  
-    font-family: sans-serif;
+    height: 450px;
+    font-family: 'Special Elite', cursive;
     justify-content: space-evenly;
     opacity: 0.8;
 }
-.div_p1{
+
+blockquote {
+    font-weight: 100;
+    font-size: 32px; 
+    max-width: 600px;
+    line-height: 1.4;
+    position: relative;
+    margin: 0;
+    padding: 8px; 
+  }
+  
+  blockquote:before,
+  blockquote:after {
+    position: absolute;
+    color: #f1efe6;
+    font-size: 128px; 
+    width: 64px; 
+    height: 64px; 
+  }
+  .div_p1{
     margin: 5px;
 }
 .div_p2{
     margin: 5px;
 }
-#p1{
-    align-items: center;
-    border: 2px solid white;
-    border-radius: 8px;
-    padding: 4px;
-    background-color: #232323;
-    font-size: larger;
-}
-#p2{
-    font-size: larger;
-    align-items: center;
-    border: 2px solid white;
-    border-radius: 8px;
-    padding: 4px;
-    background-color: #232323;
-}
+  blockquote:before {
+    content: '“';
+    left: -80px; 
+    top: -32px;
+  }
+  
+  blockquote:after {
+    content: '”';
+    right: -80px; 
+    bottom: 16px; 
+  }
+  
+  
+
+  
