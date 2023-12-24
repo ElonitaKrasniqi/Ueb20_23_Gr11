@@ -69,7 +69,6 @@ i {
     width: 375px; 
     padding: 20px;
     margin: 10px;
-    background-color: #f2f2f2;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
@@ -78,7 +77,7 @@ i {
     flex-shrink: 0;
     background-blend-mode: multiply;
     background-color: #232323;
-    opacity: 0.6;
+    opacity: 0.8;
     box-shadow: 5px 5px rgb(55, 114, 42);
 }
 .hidden:hover{
@@ -112,7 +111,7 @@ i {
 .food-item {
     margin: 15px 0;
     color: #f2f2f2;
-    border-bottom: 2px solid #ddd; /* Border between items */
+    border-bottom: 2px solid #ddd; 
     padding-bottom: 12px;
     position: relative;
     transition: background-color 0.3s;
@@ -197,4 +196,38 @@ i {
 .indexLogo h1{
     margin-top: 70px;
     padding-top: 80px;
+}
+.paragrafet{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    width: auto;
+    height: 200px;
+    border-color: white;  
+    font-family: sans-serif;
+    justify-content: space-evenly;
+    opacity: 0.8;
+}
+.div_p1{
+    margin: 5px;
+}
+.div_p2{
+    margin: 5px;
+}
+#p1{
+    align-items: center;
+    border: 2px solid white;
+    border-radius: 8px;
+    padding: 4px;
+    background-color: #232323;
+    font-size: larger;
+}
+#p2{
+    font-size: larger;
+    align-items: center;
+    border: 2px solid white;
+    border-radius: 8px;
+    padding: 4px;
+    background-color: #232323;
 }
