@@ -174,3 +174,10 @@ i {
     overflow: hidden; 
     position: relative;
   }
+  .wd{
+    width: 100%;
+    height: 250px;
+    opacity: 0.9;
+    background-color: white;
+    padding: 50px;
+}
