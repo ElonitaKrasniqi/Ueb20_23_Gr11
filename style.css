@@ -265,7 +265,7 @@ blockquote {
     text-shadow: #496363;
     font-style: bold;
     padding-top: 8%;
-   
+    padding-left: 20px;
 
 
 }
@@ -277,7 +277,7 @@ blockquote {
     text-shadow: #496363;
     font-style: italic;
     padding-right: 60%;
-    padding-left: 10px;
+    padding-left: 20px;
 }
 .wd h3 {
     color:black;
@@ -287,7 +287,7 @@ blockquote {
     text-shadow: #496363;
     font-style: italic;
     padding-right: 60%;
-    padding-left: 10px;
+    padding-left: 20px;
 }
 .gallery {
     display: flex;
@@ -345,6 +345,45 @@ blockquote {
     margin: 0px 30px;
 }  
 .gallerytitle{
+    font-family: 'Brush Script MT', cursive;
+    color:  #f1efe6;
+    font-size: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 50px;
+
+}
+
+
+.galeri {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    padding-bottom: 100px;
+  }
+  
+  .imageIndex{
+    width: 600px;
+    height: 600px;
+    overflow: hidden;
+  }
+  
+  .imageIndex img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s;
+    cursor: pointer;
+    border-radius: 15px;
+  }
+  
+  .imageIndex img:hover {
+    transform: scale(1.1);
+  }
+ 
+.Galeria{
     font-family: 'Brush Script MT', cursive;
     color:  #f1efe6;
     font-size: 45px;
