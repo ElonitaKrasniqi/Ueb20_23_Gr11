@@ -35,7 +35,7 @@ i {
 .menubody_container1{
     background-image: url('./Pics/Restaurant-Trends.jpg');
     background-blend-mode: multiply;
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, 0.4);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -78,7 +78,8 @@ i {
     background-blend-mode: multiply;
     background-color: #232323;
     opacity: 0.8;
-    box-shadow: 5px 5px rgb(55, 114, 42);
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+    
 }
 .hidden:hover{
     overflow-y: scroll;
@@ -158,7 +159,7 @@ i {
     margin-top: 150px;
     background-image: url('./Pics/top-view-elegant-plate-with-copy-space.jpg');
     background-blend-mode: multiply;
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, 0.4);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -293,6 +294,7 @@ blockquote {
     flex-wrap: wrap;
     gap: 10px;
     justify-content: center;
+    padding-bottom: 15px;
   }
   
   .imageMenu {
@@ -342,3 +344,13 @@ blockquote {
     display: inline-block;
     margin: 0px 30px;
 }  
+.gallerytitle{
+    font-family: 'Brush Script MT', cursive;
+    color:  #f1efe6;
+    font-size: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 50px;
+
+}
