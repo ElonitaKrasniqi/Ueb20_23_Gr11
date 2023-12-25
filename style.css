@@ -269,15 +269,12 @@ blockquote {
 .wd h2 {
     color:black;
     text-align: left;
-    font-size: 60px;
+    font-size: 70px;
     font-family: Georgia, 'Times New Roman', Times, serif;
     text-shadow: #496363;
     font-style: italic;
     padding-right: 60%;
     padding-left: 10px;
-    
-  
-    
 }
 .wd h3 {
     color:black;
