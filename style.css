@@ -47,7 +47,7 @@ i {
 .menuLogo{
     display: flex;
     width: 100%;
-    height: 120vh;
+    height: auto;
     justify-content: center;
     align-items: center;
     flex-direction: column;
@@ -58,7 +58,7 @@ i {
     border-style: solid;
     border-color: white;
     border-radius: 15px;
-    margin-top: 30px;
+    margin-top: 100px;
     width: 395px;
     height: 395px;
     background-attachment: scroll;  
@@ -133,7 +133,7 @@ i {
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    height: 825px; 
+    height: auto; 
     margin: 0;
 }
 .Container_hidden2{
@@ -178,7 +178,7 @@ i {
   .indexLogo{
     display: flex;
     width: 100%;
-    height: 100vh;
+    height: auto;
     justify-content: center;
     align-items: center;
     flex-direction: column;
@@ -189,7 +189,7 @@ i {
     border-style: solid;
     border-color: white;
     border-radius: 15px;
-    margin-top: 55px;
+    margin-top: 100px;
     width: 395px;
     height: 395px;
     background-attachment: scroll;  
@@ -246,19 +246,15 @@ blockquote {
     bottom: 16px; 
   }
   
-.wd{
+.rrethnesh_index{
     width: 100%;
     height: 800px;
     opacity: 0.9;
     background-color: white;
     padding-right: 70px;
-   
-
- 
-   
 }
 
-.wd h1 {
+.rrethnesh_index h1 {
     color:rgb(45, 119, 37);
     text-align: left;
     font-size: 30px;
@@ -268,7 +264,7 @@ blockquote {
     padding-top: 8%;
     padding-left: 30px;
 }
-.wd h2 {
+.rrethnesh_index h2 {
     color:black;
     text-align: left;
     font-size: 75px;
@@ -278,7 +274,7 @@ blockquote {
     padding-right: 60%;
     padding-left: 30px;
 }
-.wd h3 {
+.rrethnesh_index h3 {
     color:black;
     text-align: left;
     font-size: 30px;
@@ -294,27 +290,27 @@ blockquote {
     gap: 10px;
     justify-content: center;
     padding-bottom: 15px;
-  }
+}
   
-  .imageMenu {
+.imageMenu {
     width: 200px;
     height: 200px;
     overflow: hidden;
-  }
+}
   
-  .imageMenu img {
+.imageMenu img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     transition: transform 0.3s;
     cursor: pointer;
     border-radius: 15px;
-  }
+}
   
-  .imageMenu img:hover {
+.imageMenu img:hover {
     transform: scale(1.1);
-  }
-  .foot_div{
+}
+.foot_div{
     background:#000;
     padding:30px 0px;
     font-family: 'Play', sans-serif;
@@ -355,7 +351,7 @@ blockquote {
 }
 
 
-.galeri {
+.galeria_index {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
@@ -363,42 +359,30 @@ blockquote {
     padding-bottom: 15px;
   }
   
-  .imageIndex{
+.imageIndex{
     width: 500px;
     height: 750px;
     overflow: hidden;
-   
-  }
+}
   
-  .imageIndex img {
+.imageIndex img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     transition: transform 0.3s;
     cursor: pointer;
     border-radius: 15px;
-  }
+}
   
-  .imageIndex img:hover {
+.imageIndex img:hover {
     transform: scale(1.1);
-  }
- 
-.Galeria{
-    font-family: 'Brush Script MT', cursive;
-    color:  #f1efe6;
-    font-size: 45px;
+}
+.index_link_menu{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 5px;
-
-}
-
-
-.niBar{
-    display: inline-block;
     margin-top: 10px;
-    width: 100%;
+    margin-bottom: 20px;
     height: auto;
     left: 0;
     top: 0;
@@ -407,20 +391,14 @@ blockquote {
    
 }
 
-.niBar a{
+.index_link_menu a{
     text-decoration: underline solid ;
     text-decoration-color: green;
     color: white;
     
 }
 
-.niBar li{
-    padding: 20px;
-    margin: 30px;
-    display: inline-block;
-   
-   
-}
-.niBar ul li:hover{
+
+.index_link_menu a:hover{
     background-color: rgb(55, 114, 42);
 }
