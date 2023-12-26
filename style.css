@@ -409,3 +409,27 @@ blockquote {
 .index_link_menu a:hover{
     background-color: rgb(55, 114, 42);
 }
+
+/*
+.lg{
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.rec{
+        display: flex;
+        max-width: 100%; 
+        height: auto; 
+        margin-right: 10px; 
+}
+
+.us-us{
+    max-width: 100%; 
+    height: auto; 
+    margin-bottom: 10px;
+}*/
+
