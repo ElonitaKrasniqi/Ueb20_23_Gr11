@@ -248,10 +248,11 @@ blockquote {
   
 .rrethnesh_index{
     width: 100%;
-    height: 800px;
+    height: 600px;
     opacity: 0.9;
     background-color: white;
     padding-right: 70px;
+    padding-left: 50px;
 }
 
 .rrethnesh_index h1 {
@@ -261,23 +262,25 @@ blockquote {
     font-family: Georgia, 'Times New Roman', Times, serif;
     text-shadow: #496363;
     font-style: bold;
-    padding-top: 8%;
+    padding-top: 50px;
     padding-left: 30px;
+  
 }
 .rrethnesh_index h2 {
     color:black;
     text-align: left;
-    font-size: 75px;
+    font-size: 50px;
     font-family: Georgia, 'Times New Roman', Times, serif;
     text-shadow: #496363;
     font-style: italic;
     padding-right: 60%;
     padding-left: 30px;
+    margin-bottom: 20px;
 }
-.rrethnesh_index h3 {
+.rrethnesh_index p {
     color:black;
     text-align: left;
-    font-size: 30px;
+    font-size: 26px;
     font-family: Georgia, 'Times New Roman', Times, serif;
     text-shadow: #496363;
     font-style: italic;
