@@ -5,11 +5,15 @@
     height: auto;
     left: 0;
     top: 0;
-    background-color: rgba(0, 0, 0, 0.541);
+   /* background-color: rgba(0, 0, 0, 0.541);*/
 }
 
 ul li{
     list-style-type: none;
+}
+#nv{
+    background-image:linear-gradient(rgba(0,0,0,0.91),rgba(0,0,0,0.89),
+    rgba(0,0,0,0.6),rgba(0,0,0,0));
 }
 
 .navBar a{
@@ -35,7 +39,7 @@ i {
 .menubody_container1{
     background-image: url('./Pics/Restaurant-Trends.jpg');
     background-blend-mode: multiply;
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 0.2);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
