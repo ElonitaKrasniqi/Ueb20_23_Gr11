@@ -10,6 +10,30 @@
         <link rel="shortcut icon" href=".\Pics\logo.png" />
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css">
         <title>Menu </title>
+        <style>      
+        .hidden {
+            overflow: hidden;
+            opacity: 0;
+            transform: translateY(-50px);
+            transition: opacity 0.3s ease-out, transform 0.3s ease-out;
+            }
+
+        .show {
+            opacity: 0.8;
+            transform: translateY(0);
+        }
+
+        .food-item {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.3s ease-out, transform 0.3s ease-out;
+        }
+
+        .show .food-item {
+            opacity: 1;
+            transform: translateY(0);
+        }
+</style>
 </head>
 <body class="menuBody">
     <div class="menubody_container1">
@@ -222,5 +246,42 @@
             </div>
         </div>  
     </footer>
+    <script>
+        function isElementInViewport(el) {
+          var rect = el.getBoundingClientRect();
+          return (
+            rect.top >= 0 &&
+            rect.bottom <= (window.innerHeight || document.documentElement.clientHeight)
+          );
+        }
+    
+        function handleMenuScroll(menuContainer) {
+          if (isElementInViewport(menuContainer)) {
+            menuContainer.classList.add('show');
+          } else {
+            menuContainer.classList.remove('show');
+          }
+    
+          var foodItems = menuContainer.querySelectorAll('.food-item');
+          foodItems.forEach(function(item) {
+            if (isElementInViewport(item)) {
+              item.classList.add('show');
+            } else {
+              item.classList.remove('show');
+            }
+          });
+        }
+    
+        var menuContainers = document.querySelectorAll('.menu_container .hidden');
+        menuContainers.forEach(function(container) {
+          window.addEventListener('scroll', function() {
+            handleMenuScroll(container);
+          });
+    
+          document.addEventListener('DOMContentLoaded', function() {
+            handleMenuScroll(container);
+          });
+        });
+      </script>
 </body>
 </html>
