@@ -361,13 +361,14 @@ blockquote {
     flex-wrap: wrap;
     gap: 10px;
     justify-content: center;
-    padding-bottom: 100px;
+    padding-bottom: 15px;
   }
   
   .imageIndex{
-    width: 600px;
-    height: 600px;
+    width: 500px;
+    height: 800px;
     overflow: hidden;
+   
   }
   
   .imageIndex img {
@@ -390,6 +391,6 @@ blockquote {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 50px;
+    margin: 5px;
 
 }
