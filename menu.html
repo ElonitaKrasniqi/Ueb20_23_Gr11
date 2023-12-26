@@ -1,80 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
-        <link rel="stylesheet" type="text/css" href ='style.css' />
-        <link rel="shortcut icon" href=".\Pics\logo.png" />
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css">
-        <title>Menu </title>
-        <style>      
-        .hidden {
-            overflow: hidden;
-            opacity: 0;
-            transform: translateY(-50px);
-            transition: opacity 0.3s ease-out, transform 0.3s ease-out;
-            }
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="shortcut icon" href=".\Pics\logo.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
+    />
+    <title>Menu</title>
+    <style>
+      .hidden {
+        overflow: hidden;
+        opacity: 0;
+        transform: translateY(-50px);
+        transition: opacity 0.3s ease-out, transform 0.3s ease-out;
+      }
 
-        .show {
-            opacity: 0.8;
-            transform: translateY(0);
-        }
+      .show {
+        opacity: 0.8;
+        transform: translateY(0);
+      }
 
-        .food-item {
+      .food-item {
+        opacity: 0;
+        transform: translateY(20px);
+        transition: opacity 0.3s ease-out, transform 0.3s ease-out;
+      }
 
-            
-            opacity: 0;
-            transform: translateY(20px);
-            transition: opacity 0.3s ease-out, transform 0.3s ease-out;
-        }
-
-        .show .food-item {
-            opacity: 1;
-            transform: translateY(0);
-        }
-</style>
-</head>
-<body class="menuBody">
+      .show .food-item {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    </style>
+  </head>
+  <body class="menuBody">
     <div class="menubody_container1">
-        <div class="navBar" id="nv">
-            
-            <nav>
-                <i class="bi bi-justify" onclick="alert('Hello')" id="hamMenu"></i>
-                <ul>
-                    <li><a href="index.html">BALLINA</a></li>
-                    <li><a href="#">MENU</a></li>
-                    <li><a href="#">RRETH NESH</a></li>
-                    <li><a href="#">KONTAKTI</a></li>
-                    <li><a href="https://www.google.com/maps/place/Flo's+Restaurant/@42.6596241,20.2923249,15z/data=!4m6!3m5!1s0x1352fd715bcd74b3:0xb13aa69e38cee452!8m2!3d42.6596241!4d20.2923249!16s%2Fg%2F1ptz59ckh?entry=ttu" >LOKACIONI</a></li>
-                    <li class="icon"><a href="https://www.instagram.com/flospeja/"><i class="bi bi-instagram"></i></a></li>
-                    <li class="icon"><a href="mailto:info@flospeja.com"><i class="bi bi-envelope-fill"></i></a></li>
-                    <li class="icon"><a href="call:049-503-655"><i class="bi bi-telephone-forward"></i></a></li>
-                </ul>
-            </nav>
+      <div class="navBar" id="nv">
+        <nav>
+          <i class="bi bi-justify" onclick="alert('Hello')" id="hamMenu"></i>
+          <ul>
+            <li><a href="index.html">BALLINA</a></li>
+            <li><a href="#">MENU</a></li>
+            <li><a href="#">RRETH NESH</a></li>
+            <li><a href="#">KONTAKTI</a></li>
+            <li>
+              <a
+                href="https://www.google.com/maps/place/Flo's+Restaurant/@42.6596241,20.2923249,15z/data=!4m6!3m5!1s0x1352fd715bcd74b3:0xb13aa69e38cee452!8m2!3d42.6596241!4d20.2923249!16s%2Fg%2F1ptz59ckh?entry=ttu"
+                >LOKACIONI</a
+              >
+            </li>
+            <li class="icon">
+              <a href="https://www.instagram.com/flospeja/"
+                ><i class="bi bi-instagram"></i
+              ></a>
+            </li>
+            <li class="icon">
+              <a href="mailto:info@flospeja.com"
+                ><i class="bi bi-envelope-fill"></i
+              ></a>
+            </li>
+            <li class="icon">
+              <a href="call:049-503-655"
+                ><i class="bi bi-telephone-forward"></i
+              ></a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="menuLogo">
+        <img src=".\Pics\logo_transparente.png" alt="" />
+        <div class="menuLogo_div">
+          <h1 style="color: rgb(0, 0, 0)" class="menuLogo_h1">
+            MENU
+            <svg
+              width="50px"
+              height="50px"
+              fill="#000000"
+              version="1.1"
+              id="Capa_1"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              viewBox="0 0 45.001 45.001"
+              xml:space="preserve"
+            >
+              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+              <g
+                id="SVGRepo_tracerCarrier"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></g>
+              <g id="SVGRepo_iconCarrier">
+                <g>
+                  <path
+                    d="M42.73,21.939c-0.525-8.071-6.996-14.56-15.197-15.313c0.066-0.182,0.109-0.375,0.109-0.58 c0-0.942-0.767-1.705-1.705-1.705c-0.941,0-1.707,0.763-1.707,1.705c0,0.205,0.043,0.398,0.106,0.58 C16.139,7.379,9.668,13.868,9.141,21.939h-2.27c0,1.139,0.924,2.063,2.064,2.063h1.851c-2.144,1.083-5.095,3.995-5.095,3.995 l6.771,6.841l2.418-1.446h13.78l9.389-9.39h4.889c1.14,0,2.063-0.924,2.063-2.063H42.73z M27.844,28.929c0,0-4.486,0-6.438,0 c-0.914,0-3.063-1.996-3.063-1.996s4.082,0,5.714,0c2.605,0,3.916-2.05,4.359-2.931h6.01C32.07,25.332,27.844,28.929,27.844,28.929 z M4.08,27.562l9.021,9.021l-4.08,4.078L0,31.64L4.08,27.562z"
+                  ></path>
+                </g>
+              </g>
+            </svg>
+          </h1>
+          <span
+            style="
+              font-size: x-large;
+              text-align: center;
+              font-style: italic;
+              color: black;
+              margin-top: 50px;
+              margin-bottom: 0px;
+            "
+          >
+            Flo's Restaurant, diçka e ngrohtë - diçka e shijshme.!
+          </span>
         </div>
-
-        <div class="menuLogo">
-            <img src=".\Pics\logo_transparente.png" alt="">
-            <div class="menuLogo_div">
-                <h1 style="color: rgb(0, 0, 0); "class="menuLogo_h1">MENU <svg width="50px" height="50px" fill="#000000" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 45.001 45.001" xml:space="preserve"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g> <path d="M42.73,21.939c-0.525-8.071-6.996-14.56-15.197-15.313c0.066-0.182,0.109-0.375,0.109-0.58 c0-0.942-0.767-1.705-1.705-1.705c-0.941,0-1.707,0.763-1.707,1.705c0,0.205,0.043,0.398,0.106,0.58 C16.139,7.379,9.668,13.868,9.141,21.939h-2.27c0,1.139,0.924,2.063,2.064,2.063h1.851c-2.144,1.083-5.095,3.995-5.095,3.995 l6.771,6.841l2.418-1.446h13.78l9.389-9.39h4.889c1.14,0,2.063-0.924,2.063-2.063H42.73z M27.844,28.929c0,0-4.486,0-6.438,0 c-0.914,0-3.063-1.996-3.063-1.996s4.082,0,5.714,0c2.605,0,3.916-2.05,4.359-2.931h6.01C32.07,25.332,27.844,28.929,27.844,28.929 z M4.08,27.562l9.021,9.021l-4.08,4.078L0,31.64L4.08,27.562z"></path> </g> </g></svg></h1>
-            <span style="font-size: x-large; text-align: center; font-style: italic; color: black; margin-top: 50px; margin-bottom: 0px;">
-                Flo's Restaurant, diçka e ngrohtë - diçka e shijshme.!
-            </span>
-        </div>
-        </div> 
+      </div>
     </div>
-</div>
-<div class="menu_container">
-    <div class="Container_hidden">
+
+    <div class="menu_container">
+      <div class="Container_hidden">
         <div class="hidden" id="paragjelle">
-            <img src="./Pics/photo7.jpg" alt="" class="circle_Photo">
-            <h2 class="hidden_h2">Paragjelle</h2>
-            <ul class="food-list">
-                <li class="food-item">Omeletë me djathë - 2.00€</li>
-                <li class="food-item">Yogurt me fruta - 0.75€</li>
+          <img src="./Pics/photo7.jpg" alt="" class="circle_Photo" />
+          <h2 class="hidden_h2">Paragjelle</h2>
+          <ul class="food-list">
+            <li class="food-item">Omeletë me djathë - 2.00€</li>
+            <li class="food-item">Yogurt me fruta - 0.75€</li>
             <li class="food-item">Kroasane me gjalpë - 0.50€</li>
             <li class="food-item">Mëngjesi i shpejtë me vezë - 1.50€</li>
             <li class="food-item">Muesli me qumësht dhe fruta - 1.25€</li>
@@ -82,213 +140,228 @@
             <li class="food-item">Pankek me akullore dhe mjaltë - 2.30€</li>
             <li class="food-item">Omeletë me proshutë dhe kajmak - 3.00€</li>
             <li class="food-item">Bagetë me vezë, djathë dhe domate - 3.00€</li>
-        </ul>
-    </div>
+          </ul>
+        </div>
 
-    <div class="hidden" id="fast-food">
-        <img src="./Pics/burger.png" alt="" class="circle_Photo">
-        <h2 class="hidden_h2">Fast Food</h2>
-                <ul class="food-list">
-                    <li class="food-item">Hamburger Pule - 1.50€</li>
-                    <li class="food-item">Hamburger me Qofte - 1.20€</li>
-                    <li class="food-item">Double Burger - 3.00€</li>
-                    <li class="food-item">Hamburger Vegjetarian - 1.50€</li>
-                    <li class="food-item">Tost Klasik - 0.75€</li>
-                    <li class="food-item">Tost me Proshutë - 1.20€</li>
-                    <li class="food-item">Tost me Pule - 1.00€</li>
-                    <li class="food-item">Sandwich Klasik - 0.80€</li>
-                    <li class="food-item">Sandwich Vegjetarian - 1.00€</li>
-                    <li class="food-item">Sandwich Pule - 2.20€</li>
-                    <li class="food-item">Sandwich Tune - 2.50€</li>
-                    <li class="food-item">Hot Dog Klasik - 1.50€</li>
-                    <li class="food-item">Hot Dog Chilli - 1.80€</li>
-                    <li class="food-item">Hot Dog Meksikan - 3.00€</li>
-                    <li class="food-item">Hot Dog Vegjetarian - 2.00€</li>
-                </ul>
-    </div>
+        <div class="hidden" id="fast-food">
+          <img src="./Pics/burger.png" alt="" class="circle_Photo" />
+          <h2 class="hidden_h2">Fast Food</h2>
+          <ul class="food-list">
+            <li class="food-item">Hamburger Pule - 1.50€</li>
+            <li class="food-item">Hamburger me Qofte - 1.20€</li>
+            <li class="food-item">Double Burger - 3.00€</li>
+            <li class="food-item">Hamburger Vegjetarian - 1.50€</li>
+            <li class="food-item">Tost Klasik - 0.75€</li>
+            <li class="food-item">Tost me Proshutë - 1.20€</li>
+            <li class="food-item">Tost me Pule - 1.00€</li>
+            <li class="food-item">Sandwich Klasik - 0.80€</li>
+            <li class="food-item">Sandwich Vegjetarian - 1.00€</li>
+            <li class="food-item">Sandwich Pule - 2.20€</li>
+            <li class="food-item">Sandwich Tune - 2.50€</li>
+            <li class="food-item">Hot Dog Klasik - 1.50€</li>
+            <li class="food-item">Hot Dog Chilli - 1.80€</li>
+            <li class="food-item">Hot Dog Meksikan - 3.00€</li>
+            <li class="food-item">Hot Dog Vegjetarian - 2.00€</li>
+          </ul>
+        </div>
 
-    <div class="hidden" id="grill">
-        <img src="./Pics/Grill.avif" alt="" class="circle_Photo">
-        <h2 class="hidden_h2">Grill</h2>
-            <ul class="food-list">
-                <li class="food-item">Skarpeçe me Qebap - 3.00€</li>
-                <li class="food-item">Pulë e grirë - 6.00€</li>
-                <li class="food-item">Shish kebap - 3.50€</li>
-                <li class="food-item">Biftek me perime te skuqura - 12.00€</li>
-                <li class="food-item">Biftek marine me limon dhe rozmarine - 15.00€</li>
-                <li class="food-item">Stek orizi me perime të freskëta - 4.00€</li>
-                <li class="food-item">Fileto pule me vezë të pjekur - 5.50€</li>
-                <li class="food-item">Peshk i pjekur me ullinj dhe limon - 7.50€</li>
-                <li class="food-item">Fileto qingji me një përzierje perimesh - 9.50€</li>
-                <li class="food-item">Sallatë me mish pule dhe perime - 5.00€</li>
-                <li class="food-item">Peshk pangasius me salcë kripe dhe lëng limoni - 7.00€</li>
-                <li class="food-item">Biftek i mbyllur me domate - 9.00€</li>
-                <li class="food-item">Fileto Peshku me Limon - 8.00€</li>
-                <li class="food-item">Pule të Marinuar - 7.00€</li>
-                <li class="food-item">Fileto Peshku me Salsë Mango dhe Avokado - 9.00€</li>
-            </ul>
-    </div>
-</div>
-        <div class="Container_hidden2">
-    <div class="hidden" id="pije">
-        <img src="./Pics/Drink.jpeg" alt="" class="circle_Photo">
-        <h2 class="hidden_h2">Pije</h2>
-            <ul class="food-list">
-                <li class="food-item">Kafe e zezë- 1.00€</li>
-                <li class="food-item">Kafe me qumësht - 1.00€</li>
-                <li class="food-item">Macchiato - 1.50€</li>
-                <li class="food-item">Çaj me limon - 0.50€</li>
-                <li class="food-item">Çaj kamomil - 0.50€</li>
-                <li class="food-item">Latte me vanilje - 1.50€</li>
-                <li class="food-item">Limonatë e freskët - 1.00€</li>
-                <li class="food-item">Coca-cola - 1.00€</li>
-                <li class="food-item">Lëng Frutash - 1.00€</li>
-                <li class="food-item">Fanta - 1.20€</li>
-                <li class="food-item">Birrë (Peja, Lasko) - 1.50€</li>
-                <li class="food-item">Raki klasike - 2.00€</li>
-            </ul>
-    </div>
+        <div class="hidden" id="grill">
+          <img src="./Pics/Grill.avif" alt="" class="circle_Photo" />
+          <h2 class="hidden_h2">Grill</h2>
+          <ul class="food-list">
+            <li class="food-item">Skarpeçe me Qebap - 3.00€</li>
+            <li class="food-item">Pulë e grirë - 6.00€</li>
+            <li class="food-item">Shish kebap - 3.50€</li>
+            <li class="food-item">Biftek me perime te skuqura - 12.00€</li>
+            <li class="food-item">
+              Biftek marine me limon dhe rozmarine - 15.00€
+            </li>
+            <li class="food-item">Stek orizi me perime të freskëta - 4.00€</li>
+            <li class="food-item">Fileto pule me vezë të pjekur - 5.50€</li>
+            <li class="food-item">
+              Peshk i pjekur me ullinj dhe limon - 7.50€
+            </li>
+            <li class="food-item">
+              Fileto qingji me një përzierje perimesh - 9.50€
+            </li>
+            <li class="food-item">Sallatë me mish pule dhe perime - 5.00€</li>
+            <li class="food-item">
+              Peshk pangasius me salcë kripe dhe lëng limoni - 7.00€
+            </li>
+            <li class="food-item">Biftek i mbyllur me domate - 9.00€</li>
+            <li class="food-item">Fileto Peshku me Limon - 8.00€</li>
+            <li class="food-item">Pule të Marinuar - 7.00€</li>
+            <li class="food-item">
+              Fileto Peshku me Salsë Mango dhe Avokado - 9.00€
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="Container_hidden2">
+        <div class="hidden" id="pije">
+          <img src="./Pics/Drink.jpeg" alt="" class="circle_Photo" />
+          <h2 class="hidden_h2">Pije</h2>
+          <ul class="food-list">
+            <li class="food-item">Kafe e zezë- 1.00€</li>
+            <li class="food-item">Kafe me qumësht - 1.00€</li>
+            <li class="food-item">Macchiato - 1.50€</li>
+            <li class="food-item">Çaj me limon - 0.50€</li>
+            <li class="food-item">Çaj kamomil - 0.50€</li>
+            <li class="food-item">Latte me vanilje - 1.50€</li>
+            <li class="food-item">Limonatë e freskët - 1.00€</li>
+            <li class="food-item">Coca-cola - 1.00€</li>
+            <li class="food-item">Lëng Frutash - 1.00€</li>
+            <li class="food-item">Fanta - 1.20€</li>
+            <li class="food-item">Birrë (Peja, Lasko) - 1.50€</li>
+            <li class="food-item">Raki klasike - 2.00€</li>
+          </ul>
+        </div>
 
         <div class="hidden" id="embelsira">
-            <img src="./Pics/Cake.jpg" alt="" class="circle_Photo">
-            <h2 class="hidden_h2">Ëmbëlsira</h2>
-                <ul class="food-list">
-                    <li class="food-item">Tiramisu - 2.00€</li>
-                    <li class="food-item">Bakllava - 1.50€</li>
-                    <li class="food-item">Krempita me Qokollatë - 2.00€</li>
-                    <li class="food-item">Krempita Karamel - 2.00€</li>
-                    <li class="food-item">Trifle me Boronicë - 2.50€</li>
-                    <li class="food-item">Muffin me Çokollatë - 2.50€</li>
-                    <li class="food-item">Tortë e Frutave të Freskëta - 2.50€</li>
-                    <li class="food-item">Obllandë - 1.00€</li>
-                    <li class="food-item">Bombicë - 0.50€</li>
-                    <li class="food-item">Akullore - 0.75€</li>
-                </ul>
+          <img src="./Pics/Cake.jpg" alt="" class="circle_Photo" />
+          <h2 class="hidden_h2">Ëmbëlsira</h2>
+          <ul class="food-list">
+            <li class="food-item">Tiramisu - 2.00€</li>
+            <li class="food-item">Bakllava - 1.50€</li>
+            <li class="food-item">Krempita me Qokollatë - 2.00€</li>
+            <li class="food-item">Krempita Karamel - 2.00€</li>
+            <li class="food-item">Trifle me Boronicë - 2.50€</li>
+            <li class="food-item">Muffin me Çokollatë - 2.50€</li>
+            <li class="food-item">Tortë e Frutave të Freskëta - 2.50€</li>
+            <li class="food-item">Obllandë - 1.00€</li>
+            <li class="food-item">Bombicë - 0.50€</li>
+            <li class="food-item">Akullore - 0.75€</li>
+          </ul>
         </div>
-    </div>
-    <div class="paragrafet">
+      </div>
+      <div class="paragrafet">
         <div class="div_p1">
-            <blockquote style="color: white; font-style: italic;" id="p1">
-                Cilësia e ushqimit të një restoranti është në përpjesëtim të zhdrejtë me sasinë e argëtimit që duket se ka stafi i tij.
-                <cite>- Dov Davidoff</cite>
-            </blockquote>
+          <blockquote style="color: white; font-style: italic" id="p1">
+            Cilësia e ushqimit të një restoranti është në përpjesëtim të
+            zhdrejtë me sasinë e argëtimit që duket se ka stafi i tij.
+            <cite>- Dov Davidoff</cite>
+          </blockquote>
         </div>
         <div class="div_p2">
-            <blockquote style="color: white; font-style: italic;" id="p2">
-                Një restorant është një fantazi - një lloj fantazie e gjallë në të cilën darkuesit janë anëtarët më të rëndësishëm të castit.
-                
-                <cite>- Warner LeRoy</cite>
-            </blockquote>
+          <blockquote style="color: white; font-style: italic" id="p2">
+            Një restorant është një fantazi - një lloj fantazie e gjallë në të
+            cilën darkuesit janë anëtarët më të rëndësishëm të castit.
+
+            <cite>- Warner LeRoy</cite>
+          </blockquote>
         </div>
-    </div>
-    <div class="row gallerytitle">
+      </div>
+      <div class="row gallerytitle">
         <span>Galeria e ushqimeve tona</span>
+      </div>
+      <div class="gallery">
+        <div class="imageMenu">
+          <img src="./Pics/photo1.jpg" alt="Image 1" />
+        </div>
+        <div class="imageMenu">
+          <img src="./Pics/photo2.jpg" alt="Image 2" />
+        </div>
+        <div class="imageMenu">
+          <img src="./Pics/photo3.jpg" alt="Image 3" />
+        </div>
+        <div class="imageMenu">
+          <img src="./Pics/photo4.jpg" alt="Image 4" />
+        </div>
+        <div class="imageMenu">
+          <img src="./Pics/photo5.jpg" alt="Image 5" />
+        </div>
+        <div class="imageMenu">
+          <img src="./Pics/photo6.jpg" alt="Image 6" />
+        </div>
+        <div class="imageMenu">
+          <img src="./Pics/photo7.jpg" alt="Image 7" />
+        </div>
+        <div class="imageMenu">
+          <img src="./Pics/photo8.jpg" alt="Image 8" />
+        </div>
+        <div class="imageMenu">
+          <img src="./Pics/photo9.jpg" alt="Image 9" />
+        </div>
+        <div class="imageMenu">
+          <img src="./Pics/photo10.jpg" alt="Image 10" />
+        </div>
+        <div class="imageMenu">
+          <img src="./Pics/photo11.jpg" alt="Image 11" />
+        </div>
+        <div class="imageMenu">
+          <img src="./Pics/photo12.jpg" alt="Image 12" />
+        </div>
+        <div class="imageMenu">
+          <img src="./Pics/photo14.jpg" alt="Image 13" />
+        </div>
+        <div class="imageMenu">
+          <img src="./Pics/photo13.jpg" alt="Image 14" />
+        </div>
+      </div>
     </div>
-    <div class="gallery"> 
-    <div class="imageMenu">
-    <img src="./Pics/photo1.jpg" alt="Image 1">
-    </div>
-    <div class="imageMenu">
-    <img src="./Pics/photo2.jpg" alt="Image 2">
-    </div>
-    <div class="imageMenu">
-    <img src="./Pics/photo3.jpg" alt="Image 3">
-    </div>
-    <div class="imageMenu">
-    <img src="./Pics/photo4.jpg" alt="Image 4">
-    </div>
-    <div class="imageMenu">
-    <img src="./Pics/photo5.jpg" alt="Image 5">
-    </div>
-    <div class="imageMenu">
-    <img src="./Pics/photo6.jpg" alt="Image 6">
-    </div>
-    <div class="imageMenu">
-    <img src="./Pics/photo7.jpg" alt="Image 7">
-    </div>
-    <div class="imageMenu">
-    <img src="./Pics/photo8.jpg" alt="Image 8">
-    </div>
-    <div class="imageMenu">
-    <img src="./Pics/photo9.jpg" alt="Image 9">
-    </div>
-    <div class="imageMenu">
-    <img src="./Pics/photo10.jpg" alt="Image 10">
-    </div>
-    <div class="imageMenu">
-    <img src="./Pics/photo11.jpg" alt="Image 11">
-    </div>
-    <div class="imageMenu">
-    <img src="./Pics/photo12.jpg" alt="Image 12">
-    </div>
-    <div class="imageMenu">
-    <img src="./Pics/photo14.jpg" alt="Image 13">
-    </div>
-    <div class="imageMenu">
-    <img  src="./Pics/photo13.jpg" alt="Image 14">
-    </div>
-    </div>
-</div>
-<!--<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <!--<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
     <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
   </svg>
--->  
+-->
     <footer>
-        <div class="foot_div">
-            <div class="social">
-                <a href="https://www.instagram.com/flospeja/"><i class="icon ion-social-instagram"></i></a>
-                <a href="https://www.facebook.com/flospeja"><i class="icon ion-social-facebook"></i></a>
-            </div>
-            <div class="social">
-                   <ul>
-                        <li><a href="./index.html">BALLINA</a></li>
-                        <li><a href="./menu.html">MENU</a></li>
-                        <li><a href="./aboutus.html">RRETH NESH</a></li>
-                        <li><a href="#">KONTAKTI</a></li>
-                        <li><a href="#">POLITIKA PRIVATESISE</a></li>
-                   </ul> 
-            </div>
-            <div class="social">
-                Flo's Restaurant
-            </div>
-        </div>  
+      <div class="foot_div">
+        <div class="social">
+          <a href="https://www.instagram.com/flospeja/"
+            ><i class="icon ion-social-instagram"></i
+          ></a>
+          <a href="https://www.facebook.com/flospeja"
+            ><i class="icon ion-social-facebook"></i
+          ></a>
+        </div>
+        <div class="social">
+          <ul>
+            <li><a href="./index.html">BALLINA</a></li>
+            <li><a href="./menu.html">MENU</a></li>
+            <li><a href="./aboutus.html">RRETH NESH</a></li>
+            <li><a href="#">KONTAKTI</a></li>
+            <li><a href="#">POLITIKA PRIVATESISE</a></li>
+          </ul>
+        </div>
+        <div class="social">Flo's Restaurant</div>
+      </div>
     </footer>
     <script>
-        function isElementInViewport(el) {
-          var rect = el.getBoundingClientRect();
-          return (
-            rect.top >= 0 &&
-            rect.bottom <= (window.innerHeight || document.documentElement.clientHeight)
-          );
+      function isElementInViewport(el) {
+        var rect = el.getBoundingClientRect();
+        return (
+          rect.top >= 0 &&
+          rect.bottom <=
+            (window.innerHeight || document.documentElement.clientHeight)
+        );
+      }
+
+      function handleMenuScroll(menuContainer) {
+        if (isElementInViewport(menuContainer)) {
+          menuContainer.classList.add("show");
+        } else {
+          menuContainer.classList.remove("show");
         }
-    
-        function handleMenuScroll(menuContainer) {
-          if (isElementInViewport(menuContainer)) {
-            menuContainer.classList.add('show');
+
+        var foodItems = menuContainer.querySelectorAll(".food-item");
+        foodItems.forEach(function (item) {
+          if (isElementInViewport(item)) {
+            item.classList.add("show");
           } else {
-            menuContainer.classList.remove('show');
+            item.classList.remove("show");
           }
-    
-          var foodItems = menuContainer.querySelectorAll('.food-item');
-          foodItems.forEach(function(item) {
-            if (isElementInViewport(item)) {
-              item.classList.add('show');
-            } else {
-              item.classList.remove('show');
-            }
-          });
-        }
-    
-        var menuContainers = document.querySelectorAll('.menu_container .hidden');
-        menuContainers.forEach(function(container) {
-          window.addEventListener('scroll', function() {
-            handleMenuScroll(container);
-          });
-    
-          document.addEventListener('DOMContentLoaded', function() {
-            handleMenuScroll(container);
-          });
         });
-      </script>
-</body>
+      }
+
+      var menuContainers = document.querySelectorAll(".menu_container .hidden");
+      menuContainers.forEach(function (container) {
+        window.addEventListener("scroll", function () {
+          handleMenuScroll(container);
+        });
+
+        document.addEventListener("DOMContentLoaded", function () {
+          handleMenuScroll(container);
+        });
+      });
+    </script>
+  </body>
 </html>
