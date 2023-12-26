@@ -392,3 +392,40 @@ blockquote {
     margin: 5px;
 
 }
+
+
+.niBar{
+    display: inline-block;
+    margin-bottom: 5px;
+    width: 100%;
+    height: auto;
+    left: 0;
+    top: 0;
+   
+    text-align: center;
+   
+}
+
+ul li{
+    list-style-type: none;
+}
+
+.niBar a{
+    text-decoration: none;
+    color: white;
+    
+}
+i {
+    font-size: 20px;
+    
+}
+.niBar ni li{
+    padding: 10px;
+    margin: 20px;
+    display: inline-block;
+   
+   
+}
+.niBar ni ul li:hover{
+    background-color: rgb(55, 114, 42);
+}
