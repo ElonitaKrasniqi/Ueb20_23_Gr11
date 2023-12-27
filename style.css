@@ -438,5 +438,5 @@ blockquote {
 
 #animeImg{
     opacity: 0;
-    transition: opacity 1s ease-in-out;
+    transition: opacity 4s ease-in-out;
 }
