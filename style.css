@@ -440,3 +440,54 @@ blockquote {
     opacity: 0;
     transition: opacity 4s ease-in-out;
 }
+
+  .contactusBody {
+    width: auto;
+    background-image: url('https://b.zmtcdn.com/mx-onboarding-hero87f77501659a5656cad54d98e72bf0d81627911821.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    background-color: white;
+    font-family: cursive;
+    display: flex;
+    flex-direction: column;
+    height: 720px;
+}
+.cu-mess {
+    width: 400px;
+    height: auto;
+    float: left;
+    clear: both;
+    position: absolute;
+    margin-top: 800px;
+    margin-left: 50px;
+    color: #000;
+}
+
+.f-basic {
+    background-image: url("https://img.freepik.com/free-photo/grunge-black-concrete-textured-background_53876-124541.jpg");
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat; 
+    text-align: center;
+    padding: 20px 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.f-basic .social i {
+    color: white;
+    margin: 10px;
+}
+
+.f-basic .list-inline-item a {
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+}
+
+.f-basic {
+    color: white;
+    margin-top: 10px;
+}
