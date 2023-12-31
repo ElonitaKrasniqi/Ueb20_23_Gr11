@@ -216,5 +216,12 @@
       </div>
     </footer>
     <script src="./app.js"></script>
+    <script>
+      document.getElementById('reservationForm').addEventListener('submit', function (event) {
+          event.preventDefault();
+          document.getElementById('reservationForm').style.display = 'none';
+          document.getElementById('successMessage').style.display = 'block';
+      });
+  </script>
   </body>
 </html>
