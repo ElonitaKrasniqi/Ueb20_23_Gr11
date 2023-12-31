@@ -88,6 +88,33 @@
         <img src="./Pics/ballina3.jpg" alt="Image 3" />
       </div>
     </div>
+    <div class="container_form">
+      <h2 class="form_h2">Reservation Form</h2>
+      <form class="index_form" id="reservationForm">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+  
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+  
+          <label for="phone">Phone:</label>
+          <input type="tel" id="phone" name="phone" required>
+  
+          <label for="date">Date:</label>
+          <input type="date" id="date" name="date" required>
+  
+          <label for="time">Time:</label>
+          <input type="time" id="time" name="time" required>
+  
+          <label for="guests">Number of Guests:</label>
+          <input type="number" id="guests" name="guests" min="1" required>
+  
+          <button class="button_form" type="submit">Submit Reservation</button>
+      </form>
+      <div id="successMessage" class="success-message" style="display: none;">
+          Faleminderit! Ju mirëpresim!
+      </div>
+  </div>
     <footer>
       <div class="foot_div">
         <div class="social">
