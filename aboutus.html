@@ -14,7 +14,7 @@
    
 </head>
 <body class="bodyAboutUs">
-
+    <div class ="bodyAboutUs_container">
 <div class="navBar" id="nv">
 <nav>
     <i class="bi bi-justify" onclick="alert('Hello')" id ="hamMenu"></i>
@@ -31,39 +31,22 @@
 </nav>
 </div>
 
+    <div class="aboutusLogo">
+      <img src=".\Pics\logo_transparente.png" alt="" id="animeImg"/>
+      <div class="aboutusLogo_div">
 
-<div class="header">
-    
-    <!-- main logo !-->
-<div class="IntroMsg">
- <img 
- class="logo" src="" id="introLogo" />
- </div>
- </br>
-     <span style="font-weight: bold; text-align:center; font-size: 50px; font-style: italic; color: black; margin-top: 100; margin-left: 500px; position: absolute;;">
-         Rreth Nesh
-     </span>
-     <br>
-     <span style="font-size: medium; text-align: center; font-style: italic; color: black; margin-top: 900px; margin-left: 500px; position: absolute">
-         Flo's Restaurant, parajsa në pjatën tuaj!
-     </span>
-     <span style="font-size: medium; text-align: left; font-style: italic; color: black; margin-top: 900px; margin-left: 25px; position: absolute">
-         Ne jemi hapur çdo ditë nga ora 07:00 - 23:00
-     </span>
- </div>
- <br>
- <br>
- <br>
-
- <div class="logojaaboutus">
-    <div class="aboutUsLogo">
-      <img src="./Pics/logo_transparente.png" alt="" />
+        <span style="font-weight: bold; text-align:center; font-size: 50px; font-style: italic; color: black; margin-top: 100; margin-left: 500px; position: absolute;;">
+            Rreth Nesh
+        </span>
+        <br>
+        <span style="font-size: medium; text-align: center; font-style: italic; color: black; margin-top: 900px; margin-left: 500px; position: absolute">
+            Flo's Restaurant, parajsa në pjatën tuaj!
+        </span>
+        <span style="font-size: medium; text-align: left; font-style: italic; color: black; margin-top: 900px; margin-left: 25px; position: absolute">
+            Ne jemi hapur çdo ditë nga ora 07:00 - 23:00
+        </span>
     </div>
-
-    <div class="backgroundau">
-          <img src="./Pics/background-aboutus.jpg" width="900" height="500">
-        </div>
-    
+    </div>
 
         <div class="au-o-story">
             <h3 class="h3-1">Restauranti nga Peja</h3>
@@ -124,30 +107,39 @@
         <button type="submit" id="submitBtn">Submit</button>
     </form>
 </div>
-<br>
-<br>
 
-
-    <footer>
-        <div class="foot_div">
-            <div class="social">
-                <a href="https://www.instagram.com/flospeja/"><i class="icon ion-social-instagram"></i></a>
-                <a href="https://www.facebook.com/flospeja"><i class="icon ion-social-facebook"></i></a>
-            </div>
-            <div class="social">
-                   <ul>
-                        <li><a href="./index.html">BALLINA</a></li>
-                        <li><a href="./menu.html">MENU</a></li>
-                        <li><a href="#">RRETH NESH</a></li>
-                        <li><a href="#">KONTAKTI</a></li>
-                        <li><a href="#">POLITIKA PRIVATESISE</a></li>
-                   </ul> 
-            </div>
-            <div class="social">
-                Flo's Restaurant
-            </div>
-        </div>  
-    </footer>
-
-
+<footer>
+    <div class="foot_div">
+      <div class="social">
+        <a href="https://www.instagram.com/flospeja/"
+          ><i class="icon ion-social-instagram"></i
+        ></a>
+        <a href="https://www.facebook.com/flospeja"
+          ><i class="icon ion-social-facebook"></i
+        ></a>
+      </div>
+      <div class="social">
+        <ul>
+          <li><a href="./index.html">BALLINA</a></li>
+          <li><a href="./menu.html">MENU</a></li>
+          <li><a href="#">RRETH NESH</a></li>
+          <li><a href="#">KONTAKTI</a></li>
+          <li><a href="#">POLITIKA PRIVATESISE</a></li>
+        </ul>
+      </div>
+      <div class="social">Flo's Restaurant</div>
+    </div>
+  </footer>
+  <script src="./app.js"></script>
+  <script>
+    document.getElementById('reservationForm').addEventListener('submit', function (event) {
+        event.preventDefault();
+        document.getElementById('reservationForm').style.display = 'none';
+        document.getElementById('successMessage').style.display = 'block';
+    });
+</script>
+</body>
 </html>
+
+
+   
