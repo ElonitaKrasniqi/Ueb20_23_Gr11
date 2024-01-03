@@ -460,7 +460,7 @@ img {
 }
 
 
-div {
+.div {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -468,7 +468,7 @@ div {
     text-align: center;
 }
 
-img {
+.img {
     width: 300px; 
     height: auto; 
     margin: 10px; 
@@ -581,7 +581,8 @@ input:focus, select:focus {
 .container_index1{
     display: flex;
     align-items: center;
-    justify-content: space-around
+    justify-content: space-around;
+    padding: 30px;
 
 }
 .bodyAboutUs_container{
