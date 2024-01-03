@@ -130,7 +130,7 @@ i {
     justify-content: space-evenly;
 }
 .bodyIndex{
-   /* background-image: url('./Pics/index1.jpg');*/
+    /*background-image: url('./Pics/index1.jpg');*/
     background-blend-mode: multiply;
     background-color: rgba(0, 0, 0, 0.6);
     background-repeat: no-repeat;
@@ -362,7 +362,7 @@ blockquote {
     display: flex;
     gap: 10px;
     justify-content: center;
-    padding-bottom: 15px;
+    padding-top:20px;
   }
   
 .imageIndex{
