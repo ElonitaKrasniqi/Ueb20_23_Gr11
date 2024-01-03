@@ -291,6 +291,11 @@ blockquote {
     padding-right: 60%;
     padding-left: 30px;
 }
+mark {
+    background-color: rgba(167, 133, 65, 0.479); 
+    color: black; 
+    font-weight: bold; 
+  }
 .gallery {
     display: flex;
     flex-wrap: wrap;
