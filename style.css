@@ -483,16 +483,15 @@ img {
 }
 
   .contactusBody {
-    width: auto;
-    background-image: url('https://b.zmtcdn.com/mx-onboarding-hero87f77501659a5656cad54d98e72bf0d81627911821.webp');
+    background-image: url("./Pics/cu.jpg");
+    background-blend-mode: multiply;
+    background-color: rgba(0, 0, 0, 0.6);
     background-repeat: no-repeat;
     background-size: cover;
-    color: white;
-    background-color: white;
-    font-family: cursive;
-    display: flex;
-    flex-direction: column;
-    height: 720px;
+    background-position: center;
+    background-attachment: fixed;
+    height: auto; 
+    margin: 0;
 }
 .cu-mess {
     width: 400px;
@@ -500,39 +499,10 @@ img {
     float: left;
     clear: both;
     position: absolute;
-    margin-top: 800px;
-    margin-left: 50px;
-    color: #000;
-}
-
-.f-basic {
-    background-image: url("https://img.freepik.com/free-photo/grunge-black-concrete-textured-background_53876-124541.jpg");
-    background-size: cover; 
-    background-position: center;
-    background-repeat: no-repeat; 
-    text-align: center;
-    padding: 20px 0;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-}
-
-.f-basic .social i {
+    margin-top: 400px;
+    margin-left: 80px;
     color: white;
-    margin: 10px;
 }
-
-.f-basic .list-inline-item a {
-    color: white;
-    text-decoration: none;
-    margin: 10px;
-}
-
-.f-basic {
-    color: white;
-    margin-top: 10px;
-}
-
 .container_form {
     max-width: 500px;
     width: 100%;
@@ -642,4 +612,11 @@ input:focus, select:focus {
     margin-top: 100px;
     width: 395px;
     height: 395px;
+}
+#map {
+    position: absolute;
+    width: 100%;
+    height: 300px;
+    margin-top: 250px;
+    margin-left: 800px;
 }
