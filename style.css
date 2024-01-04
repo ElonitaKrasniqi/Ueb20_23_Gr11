@@ -818,8 +818,20 @@ video{
 #checkbox{
     margin-right: 10px;
 }
-input {
+.checkbox_term{
     height: 2em;
     width: 2em;
     vertical-align: middle;
+}
+.comment{
+    justify-content: flex-start;
+}
+#commentForm{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+#comment{
+    height: 2em;
+    width: 37%;
 }
