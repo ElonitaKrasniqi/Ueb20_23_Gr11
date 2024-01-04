@@ -656,6 +656,21 @@ input:focus, select:focus {
     border-color: #4caf50;
 }
 
+.horizontal-radio-group {
+    display:flex;
+    padding: 10px;
+    align-items:center;
+    width: auto;
+    
+}
+
+.radio-class{
+    margin:10px;
+}
+
+
+
+
 .button_form {
     background-color: #c58f59;
     color: #fff;
