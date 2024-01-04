@@ -774,3 +774,10 @@ video{
     height: 140px;
 }
 
+.audio_div{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-top:600px ;
+    margin-right: 500px;
+}
