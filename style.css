@@ -130,12 +130,8 @@ i {
     justify-content: space-evenly;
 }
 .bodyIndex{
-    /*background-image: url('./Pics/index1.jpg');*/
-    background-blend-mode: multiply;
-    background-color: rgba(0, 0, 0, 0.6);
-    background-repeat: no-repeat;
+    background-image: url('./Pics/index1.jpg');
     background-size: cover;
-    background-position: center;
     background-attachment: fixed;
     height: auto; 
     margin: 0;
@@ -207,7 +203,7 @@ i {
     align-items: center;
     justify-content: center;
     margin-top: 50px;
-    width: 100%;
+    width: auto;
     height: 450px;
     font-family: 'Special Elite', cursive;
     justify-content: space-evenly;
@@ -233,20 +229,20 @@ blockquote {
     height: 64px; 
   }
   .div_p1{
-    margin: 25px;
+    margin: 5px;
 }
 .div_p2{
-    margin: 25px;
+    margin: 5px;
 }
   blockquote:before {
     content: '“';
-    left: -60px; 
+    left: -80px; 
     top: -32px;
   }
   
   blockquote:after {
     content: '”';
-    right: -40px; 
+    right: -60px; 
     bottom: 16px; 
   }
   
@@ -291,11 +287,6 @@ blockquote {
     padding-right: 60%;
     padding-left: 30px;
 }
-mark {
-    background-color: rgba(167, 133, 65, 0.479); 
-    color: black; 
-    font-weight: bold; 
-  }
 .gallery {
     display: flex;
     flex-wrap: wrap;
@@ -367,7 +358,7 @@ mark {
     display: flex;
     gap: 10px;
     justify-content: center;
-    padding-top:20px;
+    padding-bottom: 15px;
   }
   
 .imageIndex{
@@ -417,28 +408,46 @@ mark {
 .au-o-story {
     text-align: center;
     display: block;
+    margin-top: 180px;
+    width: 100%;
+    margin-bottom: 25px;
+}
+.aboutus_row{
+    width: 100%;
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 110px;
+    background-color: #ebebeb;
+    
 }
 
 .p-os {
-    text-align: center;
+    text-align: left;
+    width: 600px;
+   
+}
+.paragraf_about_us{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: left;
 }
 .lg {
 
     background-color: #f0f0f0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
+
 
 .lg img {
-    width: 100%;
-    height: auto;
+    width: 500;
+    height: 700;
 }
 
-img {
-    max-width: 100%;
-    height: auto;
-}
+
 
 
 
@@ -454,32 +463,28 @@ img {
     margin: 0 50px; 
 }
 
-.image-container {
+.image-container_au {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.image-container img {
-    margin: 0 10px; 
+.image-container_au img {
+    margin: 0 10px;
 }
 
 
-.div {
+.image-container_ambienti {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    text-align: center;
-}
-
-.img {
-    width: 300px; 
-    height: auto; 
-    margin: 10px; 
-}
-
-   
+  }
+  
+  .image-container_ambienti img {
+    max-width: 23%; 
+    margin-right: 0.2px;
+  }
+  
 
 
 #animeImg{
@@ -586,8 +591,7 @@ input:focus, select:focus {
 .container_index1{
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    padding: 30px;
+    justify-content: space-around
 
 }
 .bodyAboutUs_container{
