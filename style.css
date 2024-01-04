@@ -818,3 +818,17 @@ video{
 #checkbox{
     margin-right: 10px;
 }
+.checkbox_term{
+    height: 2em;
+    width: 2em;
+    vertical-align: middle;
+}
+#commentForm label,
+#comment,
+#submitBtn {
+    display: inline-block;
+}
+#comment {
+    margin-right: 10px;
+    width: 37%;
+}
