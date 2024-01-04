@@ -30,7 +30,9 @@ i {
    
 }
 .navBar nav ul li:hover{
-    background-color: rgb(55, 114, 42);
+    background-color: #c58f59;
+    transition: background-color 0.5s;
+    border-radius: 15px;
 }
 
 #hamMenu{
@@ -684,9 +686,8 @@ input:focus, select:focus {
 }
 
 .container_index1{
-    display: flex;
     align-items: center;
-    justify-content: space-around
+    justify-content: space-around;
 
 }
 .bodyAboutUs_container{
