@@ -823,15 +823,17 @@ video{
     width: 2em;
     vertical-align: middle;
 }
-.comment{
-    justify-content: flex-start;
+
+/* Apply inline-block to form elements */
+#commentForm label,
+#comment,
+#submitBtn {
+    display: inline-block;
 }
-#commentForm{
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-}
-#comment{
-    height: 2em;
+
+/* Optional: Adjust spacing if needed */
+#comment {
+    margin-right: 10px;
     width: 37%;
 }
+
