@@ -424,31 +424,29 @@ blockquote {
     
 }
 
-.p-os {
-    text-align: left;
-    width: 600px;
-   
-}
-.paragraf_about_us{
+
+
+.paragraf_about_us {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
+  }
+  
+  .p-au {
     text-align: left;
-}
-.lg {
-
-    background-color: #f0f0f0;
-}
-
-
-.lg img {
-    width: 500;
-    height: 700;
-}
-
-
-
+    width: 50%;
+  }
+  
+  .lg {
+    text-align: right;
+  }
+  
+  .lg img {
+    max-width: 1000px;
+    height: 500px;
+  }
+  
 
 
 .rec {
@@ -469,8 +467,8 @@ blockquote {
     align-items: center;
 }
 
-.image-container_au img {
-    margin: 0 10px;
+.image-container_recetat img {
+    margin: 50px;
 }
 
 
@@ -481,6 +479,7 @@ blockquote {
   }
   
   .image-container_ambienti img {
+    margin: 25px;
     max-width: 23%; 
     margin-right: 0.2px;
   }
