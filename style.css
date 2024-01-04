@@ -130,9 +130,9 @@ i {
     justify-content: space-evenly;
 }
 .bodyIndex{
-    background-image: url('./Pics/INDEX1.1.png');
+    background-image: url('./Pics/foto33.jpg');
     background-size: cover;
-    opacity: 0.9;
+    opacity: 0.96;
     background-attachment: fixed;
     height: auto; 
     margin: 0;
@@ -248,11 +248,12 @@ blockquote {
   }
   
 .rrethnesh_index{
-    width: 100%;
-    height: 580px;
+    width:80%;
+    height: 620px;
     background-color:white;
     padding-right: 70px;
     padding-left: 50px;
+    margin: 0;
 }
 
 .rrethnesh_index h1 {
@@ -284,8 +285,16 @@ blockquote {
     font-family: Georgia, 'Times New Roman', Times, serif;
     text-shadow: #496363;
     font-style: italic;
-    padding-right: 60%;
+    padding-right: 52%;
     padding-left: 30px;
+}
+.container_index_rrethnesh{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    background-color: white;
 }
 .gallery {
     display: flex;
@@ -359,6 +368,7 @@ blockquote {
     height: auto; 
     margin: 0;
     padding-bottom: 10px;
+ 
    
 }
 
@@ -387,31 +397,32 @@ blockquote {
 .imageIndex img:hover {
     transform: scale(1.1);
 }
-.index_link_menu{
+
+.index_link_rrethnesh{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 10px;
-    margin-bottom: 20px;
-    height: auto;
-    left: 0;
-    top: 0;
-   
+    width: 20%;
+    height: 580px;
     text-align: center;
-   
+    padding-right: 100px;
+  background-color: white;
+  margin-right: 200px;
+  
 }
 
-.index_link_menu a{
-    text-decoration: underline solid ;
-    text-decoration-color: green;
-    color: white;
-    
+.index_link_rrethnesh a{
+    height: 64px;
+    display: inline-block;
+    color: #fff;
+    font-family: Playfair Display;
+    font-size: 20px;
+    border: 2px solid #c58f59;
+    color: #c58f59;
 }
 
 
-.index_link_menu a:hover{
-    background-color: rgb(55, 114, 42);
-}
+
 
 .au-o-story {
     text-align: center;
