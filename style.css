@@ -260,7 +260,7 @@ blockquote {
 }
 
 .rrethnesh_index h1 {
-    color:rgb(45, 119, 37);
+    color:#c58f59;
     text-align: left;
     font-size: 30px;
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -382,6 +382,7 @@ blockquote {
     gap: 10px;
     justify-content: center;
     padding-top: 10px;
+    margin: 0px 0px 20px 0px
   }
   
 .imageIndex{
