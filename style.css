@@ -780,4 +780,48 @@ video{
     align-items: center;
     margin-top:790px ;
     margin-right:500px;
+
+}
+.container_terms{
+    background-color: white;
+    width: 700px;
+    margin-left: 400px;
+    border:2px solid #000;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'play';
+}
+.container_terms h2{
+    margin-left: 19%;
+    margin-bottom: 20px;
+    position: relative;
+}
+.div_lista{
+    width: 650px;
+}
+.main_li{
+    font-family: 'play';    
+    font-weight: bold;
+    font-size: large;
+}
+.tacbox{
+    display:flex;
+    justify-content: left;    
+    width: 46%;
+    height: 50px;
+    border: 3px solid #ddd;
+    margin-top: 10px;
+    margin-left:400px;
+    margin-bottom: 10px;
+    padding: 7px;    
+}
+#checkbox{
+    margin-right: 10px;
+}
+input {
+    height: 2em;
+    width: 2em;
+    vertical-align: middle;
 }
