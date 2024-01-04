@@ -134,7 +134,7 @@ i {
 .bodyIndex{
     background-image: url('./Pics/foto33.jpg');
     background-size: cover;
-    opacity: 0.96;
+    backdrop-filter: blur(30px);
     background-attachment: fixed;
     height: auto; 
     margin: 0;
@@ -186,6 +186,7 @@ i {
     align-items: center;
     flex-direction: column;
     font-family: cursive;
+    margin-bottom: 95px;
     
 }
 .indexLogo img{ 
@@ -365,8 +366,10 @@ blockquote {
 }
 .background_index{
     background-image: url(./Pics/foto33.jpg);
+    background-blend-mode: multiply;
+    background-color: rgba(0, 0, 0, 0.8);
     background-size: cover;
-    background-attachment: fixed;
+
     height: auto; 
     margin: 0;
     padding-bottom: 10px;
@@ -618,6 +621,7 @@ font-style: oblique;
     border-radius: 10px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
     animation: fadeIn 0.5s ease-in-out;
+    margin: 60px;
 }
 
 @keyframes fadeIn {
@@ -704,7 +708,6 @@ input:focus, select:focus {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #ebbf92;
 }
 .bodyAboutUs_container{
     background-image: url('./Pics/background-aboutus.jpg');
@@ -746,10 +749,28 @@ input:focus, select:focus {
         display: flex;
         justify-content: center;
         padding-top: 10px;
-        width: 700px;
-        height: 500px;
+        width: 900px;
+        height: 600px;
         overflow: hidden;
         margin: 80px;
       padding-left: 50px;
-      }
+}
+video{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.rezervo_tani{
+    width: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 140px;
+}
 
