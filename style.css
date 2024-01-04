@@ -260,7 +260,7 @@ blockquote {
 }
 
 .rrethnesh_index h1 {
-    color:#c58f59;
+    color:rgb(45, 119, 37);
     text-align: left;
     font-size: 30px;
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -382,7 +382,6 @@ blockquote {
     gap: 10px;
     justify-content: center;
     padding-top: 10px;
-    margin: 0px 0px 20px 0px
   }
   
 .imageIndex{
@@ -755,16 +754,30 @@ input:focus, select:focus {
         overflow: hidden;
         margin: 80px;
       padding-left: 50px;
-      }
-.container_terms{
+}
+video{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.rezervo_tani{
+    width: 100%;
     background-color: white;
-    width: 700px;
-    margin-left: 400px;
-    border:2px solid #000;
-    border-radius: 8px;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 140px;
 }
 
+.audio_div{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-top:600px ;
+    margin-right: 500px;
+}
