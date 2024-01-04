@@ -378,7 +378,7 @@ blockquote {
     display: flex;
     gap: 10px;
     justify-content: center;
-    padding-TOP: 10px;
+    padding-top: 10px;
   }
   
 .imageIndex{
@@ -687,7 +687,14 @@ input:focus, select:focus {
 
 .container_index1{
     align-items: center;
+<<<<<<< Updated upstream
     justify-content: space-around;
+=======
+    justify-content: center;
+    background-color: #c58f59;
+
+
+>>>>>>> Stashed changes
 
 }
 .bodyAboutUs_container{
@@ -726,3 +733,18 @@ input:focus, select:focus {
     margin-top: 250px;
     margin-left: 800px;
 }
+.rezervimi_index{
+        display: flex;
+        justify-content: center;
+        padding-top: 10px;
+        width: 700px;
+        height: 500px;
+        overflow: hidden;
+        margin: 80px;
+      padding-left: 50px;
+      background-color: #c58f59;
+      }
+      .rezervimi_index img{
+        background-color: #c58f59;
+      }
+
