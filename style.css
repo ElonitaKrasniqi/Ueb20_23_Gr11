@@ -657,7 +657,7 @@ input:focus, select:focus {
 }
 
 .button_form {
-    background-color: #4caf50;
+    background-color: #c58f59;
     color: #fff;
     padding: 12px 20px;
     border: none;
@@ -670,7 +670,7 @@ input:focus, select:focus {
 }
 
 .button_form:hover {
-    background-color: #45a049;
+    background-color: #b37f4c;
 }
 
 .success-message {
@@ -686,16 +686,10 @@ input:focus, select:focus {
 }
 
 .container_index1{
+    display: flex;
     align-items: center;
-<<<<<<< Updated upstream
-    justify-content: space-around;
-=======
     justify-content: center;
-    background-color: #c58f59;
-
-
->>>>>>> Stashed changes
-
+    background-color: #ebbf92;
 }
 .bodyAboutUs_container{
     background-image: url('./Pics/background-aboutus.jpg');
@@ -742,9 +736,5 @@ input:focus, select:focus {
         overflow: hidden;
         margin: 80px;
       padding-left: 50px;
-      background-color: #c58f59;
-      }
-      .rezervimi_index img{
-        background-color: #c58f59;
       }
 
