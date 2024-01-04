@@ -533,6 +533,15 @@ blockquote {
     opacity: 0.999;
 }
 
+.ambienti.p{
+    font-size: 17px;
+}
+
+.ambientiyne{
+font-size: 60px;
+font-style: oblique;
+}
+
 .image-container_ambienti {
     display: flex;
     justify-content: space-between;
