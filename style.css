@@ -624,19 +624,22 @@ font-style: oblique;
 }
 .cu-mess {
     background-color: rgba(245, 241, 241, 0.66);
-    width: 40%; 
-    height: 330px;
-    max-width: 40%;
+    width: 43%; 
+    height: 270px;
+    max-width: 43%;
     margin: 10px;
     padding: 15px;
+    margin-top: 290px;
     box-sizing: border-box;
     color: black;
-    
 }
 
-.cu-mess strong {
-    display: block;
+.cu-mess strong{
+    font-size: 20px;
 }
+
+.socialIcon1 {
+    margin: 5px 0; }
 
 .socialIcon1 i {
     font-size: 1em; 
@@ -647,8 +650,8 @@ font-style: oblique;
 
 #map-container {
     display: flex;
-    padding-top: 100px;
-    padding-bottom: 20px;
+    padding-top: 25px;
+    padding-bottom: 15px;
     padding-left: 5px;
     align-items: flex-end;
 }
