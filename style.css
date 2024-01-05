@@ -299,27 +299,24 @@ blockquote {
 }
 .gallery {
     display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    justify-content: center;
-    padding-bottom: 15px;
-}
-  
-.imageMenu {
-    width: 200px;
-    height: 200px;
     overflow: hidden;
 }
   
+.imageMenu {
+    width: 440px;
+    flex: 0 0 auto;
+    transition: transform 0.3s;
+    margin-bottom: 20px;
+}
 .imageMenu img {
-    width: 100%;
-    height: 100%;
+    width: 400px;
+    height: 400px;
     object-fit: cover;
     transition: transform 0.3s;
     cursor: pointer;
     border-radius: 15px;
 }
-  
+
 .imageMenu img:hover {
     transform: scale(1.1);
 }
@@ -468,17 +465,24 @@ blockquote {
 }
 
 
-.aboutus_row{
+.aboutus_row1{
     width: 100%;
     height: 200px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: 70px;
     background-color: #ede5e5;
 }
-
+.aboutus_row2{
+    width: 100%;
+    height: 230px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #ede5e5;
+}
 
 .backgroundpic2 {
     background-image: url("./Pics/background2au.jpg");
@@ -514,19 +518,13 @@ blockquote {
     text-align: center;
 }
 
-.rec-paragraf1::before {
+.rec-paragraf::before {
     content: '\2022'; 
     display: inline-block;
     margin-right: 5px; 
     color: #000; 
   }
 
-  .rec-paragraf2::before {
-    content: '\2022'; 
-    display: inline-block;
-    margin-right: 5px; 
-    color: #000; 
-  }
 
 
 .recetat {

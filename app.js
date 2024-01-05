@@ -37,5 +37,29 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 
+let kornizaprodukti = document.getElementsByClassName("imageMenu");
+let slider = document.getElementById("slider");
+
+const maxScrollLeft = slider.scrollWidth - slider.clientWidth;
+
+function autoPlay() {
+    if (slider.scrollLeft > (maxScrollLeft - 1)) {
+        slider.scrollLeft -= maxScrollLeft
+    } else {
+        slider.scrollLeft += 1;
+    }
+}
+
+let play = setInterval(autoPlay, 7)
+
+for (var i = 0; i < kornizaprodukti.length; i++) {
+    kornizaprodukti[i].addEventListener("mouseover", function () {
+        clearInterval(play);
+    });
+    kornizaprodukti[i].addEventListener("mouseout", function () {
+        return play = setInterval(autoPlay, 10);
+    });
+}
+
 
 
