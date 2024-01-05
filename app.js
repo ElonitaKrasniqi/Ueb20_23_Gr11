@@ -20,3 +20,22 @@ $('#costum_link').hover(
         });
     }
 );
+
+document.addEventListener("DOMContentLoaded", function() {
+    var phoneInput = document.getElementById("phone");
+
+    phoneInput.addEventListener("input", function() {
+        try {
+            var regex = /^[0-9+]+$/;
+            if (!regex.test(phoneInput.value)) {
+                throw new Error("Numri qe shenuat nuk eshte valid");
+            }
+            alert("Inputi valid: " + phoneInput.value);
+        } catch (error) {
+            alert(error.message);
+        }
+    });
+});
+
+
+
