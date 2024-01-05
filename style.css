@@ -644,11 +644,11 @@ font-style: oblique;
 .cu-mess {
     background-color: rgba(245, 241, 241, 0.66);
     width: 43%; 
-    height: 270px;
+    height: 280px;
     max-width: 43%;
     margin: 10px;
     padding: 15px;
-    margin-top: 290px;
+    margin-top: 60px;
     box-sizing: border-box;
     color: black;
 }
@@ -672,6 +672,7 @@ font-style: oblique;
     padding-top: 25px;
     padding-bottom: 15px;
     padding-left: 5px;
+
     align-items: flex-end;
 }
 
@@ -897,4 +898,14 @@ video{
 #comment {
     margin-right: 10px;
     width: 37%;
+}
+
+.container_body_contactus{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.container_table{
+    margin-left: 15px;
 }
