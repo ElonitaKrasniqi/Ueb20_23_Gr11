@@ -514,13 +514,19 @@ blockquote {
     text-align: center;
 }
 
-.rec-paragraf::before {
+.rec-paragraf1::before {
     content: '\2022'; 
     display: inline-block;
     margin-right: 5px; 
     color: #000; 
   }
 
+  .rec-paragraf2::before {
+    content: '\2022'; 
+    display: inline-block;
+    margin-right: 5px; 
+    color: #000; 
+  }
 
 
 .recetat {
