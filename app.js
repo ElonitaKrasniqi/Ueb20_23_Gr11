@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", function() {
             if (!regex.test(phoneInput.value)) {
                 throw new Error("Numri qe shenuat nuk eshte valid");
             }
-            alert("Inputi valid: " + phoneInput.value);
+            console.log("Inputi valid: " + phoneInput.value);
         } catch (error) {
             alert(error.message);
         }
