@@ -49,19 +49,18 @@
     </div>
     <div class="header">
 
-           <!-- main logo !-->
 	<div class="IntroMsg">
         <img 
         class="logo" src=".\Pics\logo_transparente.png" id="animeImg" />
         </div>
         <br>
-            <span style="font-weight: bold; text-align: center; font-size: 50px; font-style: italic; color: white; margin-top: 700px;  position: absolute;;">
+          <!-- <span style="font-weight: bold; text-align: center; font-size: 50px; font-style: italic; color: white; margin-top: 700px;  position: absolute;;">
                 Na Kontaktoni
             </span>
             <br>
             <span style="font-size: medium; text-align: center; font-style: italic; color: white; margin-top: 800px;  position: absolute;">
                 Flo's Restaurant, vendi ku gastronomia bëhet art!
-            </span>
+            </span>--> 
         </div>
 
     <div class="cu-mess">
@@ -73,8 +72,26 @@
             <p class="socialIcon1"><a href="https://www.facebook.com/flospeja/"><i class="fa-brands fa-square-facebook" style="color: black;"></i></a>     Flo's Peja</p>
             <p class="socialIcon1"><a href="mailto:info@flospeja.com"><i class="bi bi-envelope-fill" style="color: black;"></i></a>     info@flospeja.com</p>
             <p class="socialIcon1"><a href="https://www.google.com/maps/place/Flo's+Restaurant/@42.6596241,20.2923249,15z/data=!4m6!3m5!1s0x1352fd715bcd74b3:0xb13aa69e38cee452!8m2!3d42.6596241!4d20.2923249!16s%2Fg%2F1ptz59ckh?entry=ttu" target="_blank"><i class="fa-solid fa-location-dot" style="color: black;"></i></a>     Sheshi Haxhi Zeka Pejë, Pejë, Kosovo</p>
-        </p>
+        </p><br>
     </div>
+
+    <div id="map-container">
+    <div id="map" style="height: 400px; width: 600px;"></div>
+<script src="./app.js"></script>
+        <script>
+            var latitude = 42.6594916;
+            var longitude = 20.2919745;
+            
+            var map = L.map('map').setView([latitude, longitude], 15);
+            
+            L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                maxZoom: 19,
+            }).addTo(map);
+            
+            var restaurantMarker = L.marker([latitude, longitude]).addTo(map);
+            restaurantMarker.bindPopup("Flo's Restaurant").openPopup();
+            </script></div>
+
     <footer>
         <div class="foot_div">
           <div class="social">
@@ -97,21 +114,6 @@
           <div class="social">Flo's Restaurant</div>
         </div>
       </footer>
-      <script src="./app.js"></script>
-    <div id="map" style="height: 400px; width: 600px;"></div>
-        <script>
-            var latitude = 42.6594916;
-            var longitude = 20.2919745;
-            
-            var map = L.map('map').setView([latitude, longitude], 15);
-            
-            L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-                maxZoom: 19,
-            }).addTo(map);
-            
-            var restaurantMarker = L.marker([latitude, longitude]).addTo(map);
-            restaurantMarker.bindPopup("Flo's Restaurant").openPopup();
-            </script>
 
 </body>
 </html>
