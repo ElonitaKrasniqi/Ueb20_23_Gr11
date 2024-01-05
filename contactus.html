@@ -53,7 +53,7 @@
         <img 
         class="logo" src=".\Pics\logo_transparente.png" id="animeImg" />
         </div>
-        <br>
+        
           <!-- <span style="font-weight: bold; text-align: center; font-size: 50px; font-style: italic; color: white; margin-top: 700px;  position: absolute;;">
                 Na Kontaktoni
             </span>
@@ -62,7 +62,7 @@
                 Flo's Restaurant, vendi ku gastronomia bëhet art!
             </span>--> 
         </div>
-
+        
     <div class="cu-mess">
         <strong>Na kontaktoni në emailin zyrtar të Flo's Restaurant në çdo kohë.</strong>
         <p>Ekipi ynë është i lumtur që do t'ju shërbejë duke ju lejuar të kontaktoni nëpërmjet platformave të ndryshme, thjesht na kontaktoni në njërën prej mënyrave të mëposhtme. Flo's Restaurant ju pret me dëshirë!
@@ -76,22 +76,22 @@
     </div>
 
     <div id="map-container">
-    <div id="map" style="height: 400px; width: 600px;"></div>
-<script src="./app.js"></script>
-        <script>
-            var latitude = 42.6594916;
-            var longitude = 20.2919745;
-            
-            var map = L.map('map').setView([latitude, longitude], 15);
-            
-            L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-                maxZoom: 19,
-            }).addTo(map);
-            
-            var restaurantMarker = L.marker([latitude, longitude]).addTo(map);
-            restaurantMarker.bindPopup("Flo's Restaurant").openPopup();
-            </script></div>
-
+      <div id="map" style="height: 400px; width: 600px;"></div></div>
+  <script src="./app.js"></script>
+          <script>
+              var latitude = 42.6594916;
+              var longitude = 20.2919745;
+              
+              var map = L.map('map').setView([latitude, longitude], 15);
+              
+              L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                  maxZoom: 19,
+              }).addTo(map);
+              
+              var restaurantMarker = L.marker([latitude, longitude]).addTo(map);
+              restaurantMarker.bindPopup("Flo's Restaurant").openPopup();
+              </script>
+  
     <footer>
         <div class="foot_div">
           <div class="social">
