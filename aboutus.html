@@ -223,7 +223,7 @@
 <br>
 <div class="review1" id="reviews-container"></div>
 <div class="aboutus_rating">
-    <h2>Si ishte përshtypja juaj: </h2>
+    <h2>Përshtypja juaj: </h2>
     <div class="rating">
       <span class="star" data-rating="1">☆</span>
       <span class="star" data-rating="2">☆</span>
@@ -236,9 +236,9 @@
 
     <script>
         var customerReviews = [
-            { name: "John Doe", rating: 5, comment: "Great food and excellent service!", image: "./Pics/konsumator1.jpg" },
-            { name: "Jane Smith", rating: 4, comment: "The atmosphere is lovely, and the desserts are fantastic.", image: "./Pics/konsumator2.jpg" },
-            { name: "Sara", rating: 5, comment: "Great food and excellent service!", image: "./Pics/konstumator3.jpg" },
+            { name: "Liridon", rating: 4, comment: "Shërbim dhe ushqim i mrekullueshëm.", image: "./Pics/konsumator2.jpg" },
+            { name: "Klea", rating: 5, comment: "Atmosfera e mirë dhe ëmbëlsirat shumë të shijshme.", image: "./Pics/konsumator1.jpg" },
+            { name: "Elsa", rating: 5, comment: "Ambient i ngrohtë dhe shërbim i mahnitshëm.", image: "./Pics/konstumator3.jpg" },
         ];
 
    
@@ -268,7 +268,7 @@
 
             var commentElement = document.createElement('p');
             commentElement.classList.add('review-comment');
-            commentElement.textContent = `Comment: "${review.comment}"`;
+            commentElement.textContent = `Komenti: "${review.comment}"`;
 
       
             contentElement.appendChild(nameElement);
