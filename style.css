@@ -444,6 +444,10 @@ blockquote {
     font-style: normal;
 }
 
+.h2-story:hover {
+    color: #c58f59;
+}
+
 .backgroundpic1 {
     background-image: url("./Pics/aboutus_bg1.jpg");
     background-repeat: no-repeat;
