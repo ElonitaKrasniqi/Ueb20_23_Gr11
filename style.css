@@ -928,12 +928,12 @@ video{
 .container_table{
     margin-left: 15px;
 }
-<<<<<<< Updated upstream
+
 .butoni{
     display: flex;
     margin-left: 288px;
 }
-=======
+
 
   
   .aboutus_rating{
@@ -1001,4 +1001,4 @@ video{
   #submitComment:active {
     transform: scale(0.9);
   }
->>>>>>> Stashed changes
+
