@@ -74,7 +74,7 @@ var originalValues = [];
 
             var reducedArray = Array.from(elements).map(function(element, index) {
                 var originalValue = parseFloat(originalValues[index]);
-                var reducedValue = originalValue * 0.85;
+                var reducedValue = (originalValue * 0.85).toFixed(2);
 
                 element.textContent = reducedValue;
 
