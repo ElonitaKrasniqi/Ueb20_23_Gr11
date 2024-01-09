@@ -102,9 +102,41 @@
         </ol>
       </div>
       </div>
+      <form action="" id="myform">
       <div class="tacbox">
         <input class="checkbox_term" id="checkbox" type="checkbox" />
         <label for="checkbox"> Unë pajtohem me <a href="#">Politikën e privatësisë</a>.</label>
+        <div class="butoni">
+          <button type="submit" id="submitButton" disabled  >Vazhdo</button>
+        </div>
       </div>
+    </form>
+    <script>
+      
+      document.addEventListener("DOMContentLoaded", function() {
+          var checkbox = document.getElementById("checkbox");
+          var submitButton = document.getElementById("submitButton");
+
+          checkbox.addEventListener("change", function() {
+             
+              submitButton.disabled = !checkbox.checked;
+          });
+         
+          document.getElementById("myForm").addEventListener("submit", function(event) {
+              if (!checkbox.checked) {
+                  event.preventDefault(); 
+                  alert('Ju lutem, pajtohuni me Politikën e privatësisë.');
+              } else {
+                  alert('Form submitted!');
+              }
+          });
+      });
+
+      var changelink = document.getElementById("submitButton");
+      changelink.addEventListener("click", function(event){
+          event.preventDefault();
+          window.location.href="index.html";
+      });
+  </script>
 </body>
 </html>

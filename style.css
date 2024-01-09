@@ -928,3 +928,7 @@ video{
 .container_table{
     margin-left: 15px;
 }
+.butoni{
+    display: flex;
+    margin-left: 288px;
+}
