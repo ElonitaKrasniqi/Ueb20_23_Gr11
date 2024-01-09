@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
     <link rel="stylesheet" href="./style.css">
     <link rel="shortcut icon" href="C:\Users\eloni\Downloads\Logo.png" />
-    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
     <script src="./js/anime.min.js"></script>    
     <script src="js/intro.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css">
@@ -56,13 +56,13 @@
                 </div>
 
                 <script>
-                    // Efekti për ngjyrën e tekstit kur kalohet mbi paragrafin
+                 
                     $('.h2-story').hover(
                         function() {
                             $(this).css('color', '#c58f59');
                         },
                         function() {
-                            $(this).css('color', ''); // Kthehet në ngjyrën origjinale kur largohet mouse
+                            $(this).css('color', ''); 
                         }
                     );
                 </script>
@@ -123,13 +123,31 @@
 <br>
 
 
-<div class="comment">
-    <form id="commentForm">
+<div class="comment" style="text-align:center;">
+    <button type="button" id="showCommentForm">Klikoni këtu për të komentuar</button>
+    <form id="commentForm" style="display:none;">
         <label for="comment-container"></label>
-        <input type="text" id="comment" name="comment" placeholder="Na lini një koment!">
-        <button type="submit" id="submitBtn">Submit</button>
+        <input type="text" id="comment" name="comment" placeholder="Komenti juaj:">
+        <button type="button" id="submitComment">Submit</button>
     </form>
+   
+    <div id="successMessage" style="display:none;">
+        <p>Faleminderit për komentin tuaj!</p>
+    </div>
 </div>
+<script>
+    $(document).ready(function () {
+        $('#showCommentForm').click(function () {
+            $('#commentForm').show();
+        });
+
+        $('#submitComment').click(function () {
+            $('#commentForm').hide();
+            $('#successMessage').show();
+        });
+    });
+</script>
+
 
 
 <footer>
