@@ -928,7 +928,77 @@ video{
 .container_table{
     margin-left: 15px;
 }
+<<<<<<< Updated upstream
 .butoni{
     display: flex;
     margin-left: 288px;
 }
+=======
+
+  
+  .aboutus_rating{
+    text-align: center;
+    color: black;
+    margin-bottom: 24px;
+  }
+  
+  .star {
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+
+  .star.selected {
+    color: gold;
+  }
+
+#showCommentForm{
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border: 2px solid #c58f59;
+  border-radius: 5px;
+  color: #fff;
+  background-color: #c58f59;
+  transition: background-color 0.3s, color 0.3s;
+  margin-bottom: 24px;
+}
+
+#showCommentForm:hover {
+  background-color: #c58f59;
+}
+
+
+#showCommentForm:active {
+  transform: scale(0.9);
+}
+
+#submitComment{
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border: 2px solid #c58f59;
+    border-radius: 5px;
+    color: #fff;
+    background-color: #c58f59;
+    transition: background-color 0.3s, color 0.3s;
+    margin-bottom: 24px;
+  }
+  
+  #submitComment:hover {
+    background-color: #c58f59;
+  }
+  
+  
+  #submitComment:active {
+    transform: scale(0.9);
+  }
+>>>>>>> Stashed changes

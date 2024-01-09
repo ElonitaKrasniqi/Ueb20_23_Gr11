@@ -13,7 +13,72 @@
     <script src="js/intro.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css">
     <title>Flo's Restaurant</title>
-   
+    <style>
+        .review1 {
+          
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            text-align: center;
+            height: 400px;
+        }
+
+        #reviews-container {
+            display: flex;
+            flex-direction: wrap;
+            align-items: center;
+            justify-content: space-around;
+            max-width: 800px;
+            margin:100px auto;
+
+        }
+
+        .review {
+            background-color: #ffffff;
+            border: 1px solid #e0e0e0;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            padding: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            text-align: left;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .review img {
+            border-radius: 50%;
+            margin-right: 20px;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+        }
+
+        .review p {
+            font-size: 20px;
+            margin: 0;
+            padding: 0;
+        }
+
+        .review h1 {
+            font-size: 24px;
+            font-weight: bold;
+           margin-bottom: 8px;
+           margin-top: 8px;
+         }
+
+        .review-rating {
+            color: #f8b400;
+            font-size: 18px;
+            margin-bottom: 8px;
+        }
+
+        .review-comment {
+            font-size: 16px;
+            line-height: 1.4;
+        }
+    </style>
 </head>
 <body class="bodyAboutUs">
     <div class ="bodyAboutUs_container">
@@ -156,6 +221,84 @@
 </div>
 <br>
 <br>
+<div class="review1" id="reviews-container"></div>
+<div class="aboutus_rating">
+    <h2>Si ishte përshtypja juaj: </h2>
+    <div class="rating">
+      <span class="star" data-rating="1">☆</span>
+      <span class="star" data-rating="2">☆</span>
+      <span class="star" data-rating="3">☆</span>
+      <span class="star" data-rating="4">☆</span>
+      <span class="star" data-rating="5">☆</span>
+    </div>
+    <p>Përshtypja juaj: <span id="selected-rating">0</span> yje</p>
+  </div>
+
+    <script>
+        var customerReviews = [
+            { name: "John Doe", rating: 5, comment: "Great food and excellent service!", image: "./Pics/konsumator1.jpg" },
+            { name: "Jane Smith", rating: 4, comment: "The atmosphere is lovely, and the desserts are fantastic.", image: "./Pics/konsumator2.jpg" },
+            { name: "Sara", rating: 5, comment: "Great food and excellent service!", image: "./Pics/konstumator3.jpg" },
+        ];
+
+   
+        var reviewsContainer = document.getElementById('reviews-container');
+
+        customerReviews.forEach(function (review) {
+           
+            var reviewElement = document.createElement('div');
+            reviewElement.style.display='flex';
+            reviewElement.style.padding='50px';
+            reviewElement.style.margin='20px';
+            reviewElement.classList.add('review');
+
+            var imgElement = document.createElement('img');
+            imgElement.src = review.image;
+            imgElement.alt = review.name + "'s Profile Picture";
+
+            var contentElement = document.createElement('div');
+
+            var nameElement = document.createElement('h1');
+            nameElement.classList.add('review-name');
+            nameElement.textContent = review.name;
+
+            var ratingElement = document.createElement('p');
+            ratingElement.classList.add('review-rating');
+            ratingElement.textContent = `Rating: ${review.rating}`;
+
+            var commentElement = document.createElement('p');
+            commentElement.classList.add('review-comment');
+            commentElement.textContent = `Comment: "${review.comment}"`;
+
+      
+            contentElement.appendChild(nameElement);
+            contentElement.appendChild(ratingElement);
+            contentElement.appendChild(commentElement);
+
+            reviewElement.appendChild(imgElement);
+            reviewElement.appendChild(contentElement);
+            reviewsContainer.appendChild(reviewElement);
+        });
+        const stars = document.querySelectorAll('.star');
+const selectedRating = document.getElementById('selected-rating');
+
+stars.forEach((star) => {
+  star.addEventListener('click', () => {
+    const rating = parseInt(star.getAttribute('data-rating'));
+    selectedRating.textContent = rating;
+
+    // fill stars 
+    for (let i = 0; i < rating; i++) {
+      stars[i].classList.add('selected');
+    }
+
+    // unfill stars
+    for (let i = rating; i < stars.length; i++) {
+      stars[i].classList.remove('selected');
+    }
+  });
+});
+    </script>
 
 
 <div class="comment" style="text-align:center;">
