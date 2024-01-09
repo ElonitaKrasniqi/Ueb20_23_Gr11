@@ -61,5 +61,47 @@ for (var i = 0; i < kornizaprodukti.length; i++) {
     });
 }
 
+var originalValues = [];
 
+        function populateAndReduce() {
+            var elements = document.querySelectorAll('.qmimi');
+
+            if (originalValues.length === 0) {
+                originalValues = Array.from(elements).map(function(element) {
+                    return element.textContent;
+                });
+            }
+
+            var reducedArray = Array.from(elements).map(function(element, index) {
+                var originalValue = parseFloat(originalValues[index]);
+                var reducedValue = originalValue * 0.85;
+
+                element.textContent = reducedValue;
+
+                return reducedValue;
+            });
+
+            console.log("Reduced Array:", reducedArray);
+
+        }
+
+        function restoreOriginalValues() {
+            var elements = document.querySelectorAll('.qmimi');
+
+            Array.from(elements).forEach(function(element, index) {
+                element.textContent = originalValues[index];
+            });
+
+            console.log("Original values restored:", originalValues);
+        }
+
+        function handleCheckboxChange() {
+            var checkbox = document.getElementById("applyReduction");
+
+            if (checkbox.checked) {
+                populateAndReduce();
+            } else {
+                restoreOriginalValues();
+            }
+        }
 
