@@ -301,6 +301,9 @@ stars.forEach((star) => {
     </script>
 
 
+<button id="hideRating" style="display: block; margin: 0 auto; opacity: 0.8;">Hide Rating</button><br>
+
+
 <div class="comment" style="text-align:center;">
     <button type="button" id="showCommentForm">Klikoni këtu për të komentuar</button>
     <form id="commentForm" style="display:none;">
@@ -324,6 +327,15 @@ stars.forEach((star) => {
             $('#successMessage').show();
         });
     });
+
+
+    $(document).ready(function(){
+  $("button#hideRating").click(function(){
+    $(".aboutus_rating").hide("slow", function(){
+      alert("The rating part is now hidden");
+    });
+  });
+});
 </script>
 
 
@@ -350,6 +362,7 @@ stars.forEach((star) => {
       <div class="social">Flo's Restaurant</div>
     </div>
   </footer>
+
   <script src="./app.js"></script>
   <script>
     document.getElementById('reservationForm').addEventListener('submit', function (event) {
