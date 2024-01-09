@@ -287,12 +287,12 @@ stars.forEach((star) => {
     const rating = parseInt(star.getAttribute('data-rating'));
     selectedRating.textContent = rating;
 
-    // fill stars 
+  
     for (let i = 0; i < rating; i++) {
       stars[i].classList.add('selected');
     }
 
-    // unfill stars
+    
     for (let i = rating; i < stars.length; i++) {
       stars[i].classList.remove('selected');
     }
