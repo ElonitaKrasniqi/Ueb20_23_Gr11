@@ -21,6 +21,24 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,700&family=Whisper&display=swap" rel="stylesheet">
     <title>Flo's Restaurant</title>
+    <style>
+   
+      #draggable-container {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        cursor: grab;
+      }
+
+      #draggable-div {
+        width: 300px;
+        padding: 10px;
+      }
+
+      .container_index1 {
+        position: relative;
+      }
+    </style>
    
   </head>
   <div class="bodyIndex">
@@ -108,10 +126,17 @@
     <video autoplay muted loop>
       <source src="./Pics/pexels-ron-lach-8922359 (540p).mp4" type="video/mp4">
     </video>
-    <div class="audio_div">
-    <audio controls>
-      <source src="./Pics/the-best-jazz-club-in-new-orleans-164472.mp3" type="audio/mp3">
+
+    <!-- Wrap the audio div with a container div -->
+    <div id="draggable-container">
+      <div class="audio_div">
+      <div id="draggable-div">
+        <audio controls>
+          <source src="./Pics/the-best-jazz-club-in-new-orleans-164472.mp3" type="audio/mp3">
+        </audio>
+      </div>
     </div>
+  </div>
 
     <div class="container_form">
       <h2 class="form_h2">Reservation Form</h2>
@@ -154,57 +179,7 @@
   </div>
   
   </div>
-  <!-- <div class="container_table">
-    <h2 class="table_h2">Restaurant Schedule</h2>
-    
-    <table>
-        <thead>
-            <tr>
-                <th>Day</th>
-                <th>Opening Time</th>
-                <th>Closing Time</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Monday</td>
-                <td>10:00 AM</td>
-                <td>9:00 PM</td>
-            </tr>
-            <tr>
-                <td>Tuesday</td>
-                <td>10:00 AM</td>
-                <td>9:00 PM</td>
-            </tr>
-            <tr>
-                <td>Wednesday</td>
-                <td>10:00 AM</td>
-                <td>9:00 PM</td>
-            </tr>
-            <tr>
-                <td>Thursday</td>
-                <td>10:00 AM</td>
-                <td>9:00 PM</td>
-            </tr>
-            <tr>
-                <td>Friday</td>
-                <td>10:00 AM</td>
-                <td>10:00 PM</td>
-            </tr>
-            <tr>
-                <td>Saturday</td>
-                <td>11:00 AM</td>
-                <td>10:00 PM</td>
-            </tr>
-            <tr>
-                <td>Sunday</td>
-                <td>11:00 AM</td>
-                <td>9:00 PM</td>
-            </tr>
-        </tbody>
-    </table>
-    </div> -->
-  
+
     <footer>
       <div class="foot_div">
         <div class="social">
@@ -235,5 +210,38 @@
           document.getElementById('successMessage').style.display = 'block';
       });
   </script>
+ <script>
+  document.addEventListener('DOMContentLoaded', function() {
+    var draggableContainer = document.getElementById('draggable-container');
+    var draggableDiv = document.getElementById('draggable-div');
+    var offsetX, offsetY, isDragging = false;
+
+    draggableContainer.addEventListener('mousedown', function(e) {
+      isDragging = true;
+      offsetX = e.clientX - draggableContainer.getBoundingClientRect().left;
+      offsetY = e.clientY - draggableContainer.getBoundingClientRect().top;
+      draggableContainer.style.cursor = 'grabbing';
+    });
+
+    document.addEventListener('mousemove', function(e) {
+      if (isDragging) {
+        var x = e.clientX - offsetX;
+        var y = e.clientY - offsetY;
+
+        // Boundary checks within the container
+        x = Math.max(0, Math.min(x, draggableContainer.clientWidth - draggableDiv.clientWidth));
+        y = Math.max(0, Math.min(y, draggableContainer.clientHeight - draggableDiv.clientHeight));
+
+        draggableContainer.style.left = x + 'px';
+        draggableContainer.style.top = y + 'px';
+      }
+    });
+
+    document.addEventListener('mouseup', function() {
+      isDragging = false;
+      draggableContainer.style.cursor = 'grab';
+    });
+  });
+</script>
   </body>
 </html>
