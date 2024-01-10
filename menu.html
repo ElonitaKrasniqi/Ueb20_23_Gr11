@@ -242,9 +242,11 @@
           </ul>
         </div>
       </div>
+      <div id="popup" style="display:none;">
       <div class="check_zbritja">
         <input type="checkbox" id="applyReduction" onchange="handleCheckboxChange()">
         <label for="applyReduction" class="aplikimiZbritjes" style="color: white;">Apliko zbritjen ditore e cila vlen vetem sot!!!</label>
+      </div>
       </div>      
       <div class="paragrafet">
         <div class="div_p1">
@@ -369,7 +371,9 @@
     }
   });
 }
-
+setTimeout(function() {
+    document.getElementById('popup').style.display = 'block';
+  }, 4000); 
 var menuContainers = document.querySelectorAll(".menu_container .hidden");
 menuContainers.forEach(function (container) {
   window.addEventListener("scroll", function () {
