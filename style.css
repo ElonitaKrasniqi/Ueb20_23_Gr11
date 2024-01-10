@@ -1024,4 +1024,10 @@ video{
         width: 2em;
         vertical-align: middle;
  }
+
+ #dateTimeSpan{
+    text-align: center;
+    color: white;
+    margin-left: 400px;
+ }
     
