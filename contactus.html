@@ -1,58 +1,83 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href='style.css' />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    />
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 
     <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,900;1,700&family=Whisper&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,900;1,700&family=Whisper&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@900&display=swap"
+      rel="stylesheet"
+    />
 
-    <title>Kontakti </title>
-     <style>
+    <title>Kontakti</title>
+    <style>
       table {
-          width: 630px;
-          border-collapse: collapse;
-          margin-top: 20px;
-          background-blend-mode: multiply;
-          background-color: #232323;
-          opacity: 0.8;
-          box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
-          color: white;
+        width: 630px;
+        border-collapse: collapse;
+        margin-top: 20px;
+        background-blend-mode: multiply;
+        background-color: #232323;
+        opacity: 0.8;
+        box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+        color: white;
       }
 
-      th, td {
-          border: 1px solid #ddd;
-          padding: 11.4px;
-          text-align: left;
+      th,
+      td {
+        border: 1px solid #ddd;
+        padding: 11.4px;
+        text-align: left;
       }
 
       th {
-          background-color: #c58c59;
+        background-color: #c58c59;
       }
 
       tr:hover {
-          background-color: #333;
+        background-color: #333;
       }
-  </style>
-</head> 
-<body class="contactusBody">
+    </style>
+  </head>
+  <body class="contactusBody">
     <div class="navBar" id="nv">
       <nav>
         <i class="bi bi-justify" onclick="alert('Hello')" id="hamMenu"></i>
@@ -88,132 +113,159 @@
       </nav>
     </div>
     <div class="header">
-
-	<div class="IntroMsg">
-        <img 
-        class="logo" src=".\Pics\logo_transparente.png" id="animeImg" />
-        </div>
-        </div>
-        <div class="row container_contactus">
-          <h1 class="contariner_contactus_h1">
-            Na Kontaktoni!
-          </h1>
-          <p class="container_contactus_p" style="display: none;">Flo's Restaurant, vendi ku gastronomia bëhet art!</p>
-        </div>
-
-      
-
-  <div class="container_body_contactus">
-        <div class="container_table">
-    <table>
-        <thead>
-            <tr>
-                <th>Day</th>
-                <th>Opening Time</th>
-                <th>Closing Time</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Monday</td>
-                <td>10:00 AM</td>
-                <td>9:00 PM</td>
-            </tr>
-            <tr>
-                <td>Tuesday</td>
-                <td>10:00 AM</td>
-                <td>9:00 PM</td>
-            </tr>
-            <tr>
-                <td>Wednesday</td>
-                <td>10:00 AM</td>
-                <td>9:00 PM</td>
-            </tr>
-            <tr>
-                <td>Thursday</td>
-                <td>10:00 AM</td>
-                <td>9:00 PM</td>
-            </tr>
-            <tr>
-                <td>Friday</td>
-                <td>10:00 AM</td>
-                <td>10:00 PM</td>
-            </tr>
-            <tr>
-                <td>Saturday</td>
-                <td>11:00 AM</td>
-                <td>10:00 PM</td>
-            </tr>
-            <tr>
-                <td>Sunday</td>
-                <td>11:00 AM</td>
-                <td>9:00 PM</td>
-            </tr>
-        </tbody>
-    </table>
+      <div class="IntroMsg">
+        <img class="logo" src=".\Pics\logo_transparente.png" id="animeImg" />
+      </div>
+    </div>
+    <div class="row container_contactus">
+      <h1 class="contariner_contactus_h1">Na Kontaktoni!</h1>
+      <p class="container_contactus_p" style="display: none">
+        Flo's Restaurant, vendi ku gastronomia bëhet art!
+      </p>
     </div>
 
-    <div class="cu-mess">
-        <strong>Na kontaktoni në emailin zyrtar të Flo's Restaurant në çdo kohë.</strong>
-        <p>Ekipi ynë është i lumtur që do t'ju shërbejë duke ju lejuar të kontaktoni nëpërmjet platformave të ndryshme, thjesht na kontaktoni në njërën prej mënyrave të mëposhtme. Flo's Restaurant ju pret me dëshirë!
-            
-            <p class="socialIcon1"><a href="call:049-503-655"><i class="bi bi-telephone" style="color: black;"></i></a>  049 503 655</p>
-            <p class="socialIcon1"><a href="https://www.instagram.com/flospeja/"><i class="bi bi-instagram" style="color: black;"></i></a>     Flo's Peja</p>
-            <p class="socialIcon1"><a href="https://www.facebook.com/flospeja/"><i class="fa-brands fa-square-facebook" style="color: black;"></i></a>     Flo's Peja</p>
-            <p class="socialIcon1"><a href="mailto:info@flospeja.com"><i class="bi bi-envelope-fill" style="color: black;"></i></a>     info@flospeja.com</p>
-          <address><p class="socialIcon1"><a href="https://www.google.com/maps/place/Flo's+Restaurant/@42.6596241,20.2923249,15z/data=!4m6!3m5!1s0x1352fd715bcd74b3:0xb13aa69e38cee452!8m2!3d42.6596241!4d20.2923249!16s%2Fg%2F1ptz59ckh?entry=ttu" target="_blank"><i class="fa-solid fa-location-dot" style="color: black;"></i></a>    Sheshi Haxhi Zeka Pejë, Pejë, Kosovo</p></address>
-      
-          </p>
-    </div>
+    <div class="container_body_contactus">
+      <div class="container_table">
+        <table>
+          <thead>
+            <tr>
+              <th>Day</th>
+              <th>Opening Time</th>
+              <th>Closing Time</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Monday</td>
+              <td>10:00 AM</td>
+              <td>9:00 PM</td>
+            </tr>
+            <tr>
+              <td>Tuesday</td>
+              <td>10:00 AM</td>
+              <td>9:00 PM</td>
+            </tr>
+            <tr>
+              <td>Wednesday</td>
+              <td>10:00 AM</td>
+              <td>9:00 PM</td>
+            </tr>
+            <tr>
+              <td>Thursday</td>
+              <td>10:00 AM</td>
+              <td>9:00 PM</td>
+            </tr>
+            <tr>
+              <td>Friday</td>
+              <td>10:00 AM</td>
+              <td>10:00 PM</td>
+            </tr>
+            <tr>
+              <td>Saturday</td>
+              <td>11:00 AM</td>
+              <td>10:00 PM</td>
+            </tr>
+            <tr>
+              <td>Sunday</td>
+              <td>11:00 AM</td>
+              <td>9:00 PM</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
 
-    <div id="map-container">
-      <div id="map" style="height: 755px; width: 650px;"></div>
-    </div>
-  </div>
-      <footer>
-        <div class="foot_div">
-          <div class="social">
-            <a href="https://www.instagram.com/flospeja/"
-              ><i class="icon ion-social-instagram"></i
+      <div class="cu-mess">
+        <strong
+          >Na kontaktoni në emailin zyrtar të Flo's Restaurant në çdo
+          kohë.</strong
+        >
+        <p>
+          Ekipi ynë është i lumtur që do t'ju shërbejë duke ju lejuar të
+          kontaktoni nëpërmjet platformave të ndryshme, thjesht na kontaktoni në
+          njërën prej mënyrave të mëposhtme. Flo's Restaurant ju pret me
+          dëshirë!
+        </p>
+
+        <p class="socialIcon1">
+          <a href="call:049-503-655"
+            ><i class="bi bi-telephone" style="color: black"></i
+          ></a>
+          049 503 655
+        </p>
+        <p class="socialIcon1">
+          <a href="https://www.instagram.com/flospeja/"
+            ><i class="bi bi-instagram" style="color: black"></i
+          ></a>
+          Flo's Peja
+        </p>
+        <p class="socialIcon1">
+          <a href="https://www.facebook.com/flospeja/"
+            ><i class="fa-brands fa-square-facebook" style="color: black"></i
+          ></a>
+          Flo's Peja
+        </p>
+        <p class="socialIcon1">
+          <a href="mailto:info@flospeja.com"
+            ><i class="bi bi-envelope-fill" style="color: black"></i
+          ></a>
+          info@flospeja.com
+        </p>
+        <address>
+          <p class="socialIcon1">
+            <a
+              href="https://www.google.com/maps/place/Flo's+Restaurant/@42.6596241,20.2923249,15z/data=!4m6!3m5!1s0x1352fd715bcd74b3:0xb13aa69e38cee452!8m2!3d42.6596241!4d20.2923249!16s%2Fg%2F1ptz59ckh?entry=ttu"
+              target="_blank"
+              ><i class="fa-solid fa-location-dot" style="color: black"></i
             ></a>
-            <a href="https://www.facebook.com/flospeja"
-              ><i class="icon ion-social-facebook"></i
-                ></a>
-              </div>
-              <div class="social">
-                <ul>
-                  <li><a href="./index.html">BALLINA</a></li>
-                  <li><a href="./menu.html">MENU</a></li>
-                  <li><a href="aboutus.html">RRETH NESH</a></li>
-                  <li><a href="contactus.html">KONTAKTI</a></li>
-                  <li><a href="./terms.html">POLITIKA PRIVATESISE</a></li>
-                </ul>
-              </div>
-              <div class="social">Flo's Restaurant</div>
-            </div>
-          </footer>
-          <script src="./app.js"></script>
-          <script src="./UpdateTime.js"></script>
-                  <script>
-                      var latitude = 42.6594916;
-                      var longitude = 20.2919745;
-                      
-                      var map = L.map('map').setView([latitude, longitude], 15);
-                      
-                      L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-                          maxZoom: 19,
-                      }).addTo(map);
-                      
-                      var restaurantMarker = L.marker([latitude, longitude]).addTo(map);
-                      restaurantMarker.bindPopup("Flo's Restaurant").openPopup();
-            
-           
-               $(document).ready(function () {
-                $('.container_contactus_p').fadeIn(3500); 
-                });
-           </script>
-      
+            Sheshi Haxhi Zeka Pejë, Pejë, Kosovo
+          </p>
+        </address>
+      </div>
 
+      <div id="map-container">
+        <div id="map" style="height: 755px; width: 650px"></div>
+      </div>
+    </div>
+    <footer>
+      <div class="foot_div">
+        <div class="social">
+          <a href="https://www.instagram.com/flospeja/"
+            ><i class="icon ion-social-instagram"></i
+          ></a>
+          <a href="https://www.facebook.com/flospeja"
+            ><i class="icon ion-social-facebook"></i
+          ></a>
+        </div>
+        <div class="social">
+          <ul>
+            <li><a href="./index.html">BALLINA</a></li>
+            <li><a href="./menu.html">MENU</a></li>
+            <li><a href="aboutus.html">RRETH NESH</a></li>
+            <li><a href="contactus.html">KONTAKTI</a></li>
+            <li><a href="./terms.html">POLITIKA PRIVATESISE</a></li>
+          </ul>
+        </div>
+        <div class="social">Flo's Restaurant</div>
+      </div>
+    </footer>
+    <script src="./app.js"></script>
+    <script src="./UpdateTime.js"></script>
+    <script>
+      var latitude = 42.6594916;
+      var longitude = 20.2919745;
 
-</body>
+      var map = L.map("map").setView([latitude, longitude], 15);
+
+      L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+        maxZoom: 19,
+      }).addTo(map);
+
+      var restaurantMarker = L.marker([latitude, longitude]).addTo(map);
+      restaurantMarker.bindPopup("Flo's Restaurant").openPopup();
+
+      $(document).ready(function () {
+        $(".container_contactus_p").fadeIn(3500);
+      });
+    </script>
+  </body>
 </html>

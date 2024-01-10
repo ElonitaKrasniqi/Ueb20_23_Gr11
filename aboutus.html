@@ -1,405 +1,454 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
-    <link rel="stylesheet" href="./style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
     <link rel="shortcut icon" href="C:\Users\eloni\Downloads\Logo.png" />
     <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
-    <script src="./js/anime.min.js"></script>    
+    <script src="./js/anime.min.js"></script>
     <script src="js/intro.js"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
+    />
     <title>Flo's Restaurant</title>
     <style>
-        .review1 {
-          
-            font-family: 'Arial', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-            text-align: center;
-            height: 400px;
-        }
+      .review1 {
+        font-family: "Arial", sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+        text-align: center;
+        height: 400px;
+      }
 
-        #reviews-container {
-            display: flex;
-            flex-direction: wrap;
-            align-items: center;
-            justify-content: space-around;
-            max-width: 800px;
-            margin:100px auto;
+      #reviews-container {
+        display: flex;
+        flex-direction: wrap;
+        align-items: center;
+        justify-content: space-around;
+        max-width: 800px;
+        margin: 100px auto;
+      }
 
-        }
+      .review {
+        background-color: #ffffff;
+        border: 1px solid #e0e0e0;
+        border-radius: 10px;
+        margin-bottom: 20px;
+        padding: 20px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
 
-        .review {
-            background-color: #ffffff;
-            border: 1px solid #e0e0e0;
-            border-radius: 10px;
-            margin-bottom: 20px;
-            padding: 20px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            text-align: left;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
+      .review img {
+        border-radius: 50%;
+        margin-right: 20px;
+        width: 150px;
+        height: 150px;
+        object-fit: cover;
+      }
 
-        .review img {
-            border-radius: 50%;
-            margin-right: 20px;
-            width: 150px;
-            height: 150px;
-            object-fit: cover;
-        }
+      .review p {
+        font-size: 20px;
+        margin: 0;
+        padding: 0;
+      }
 
-        .review p {
-            font-size: 20px;
-            margin: 0;
-            padding: 0;
-        }
+      .review h1 {
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 8px;
+        margin-top: 8px;
+      }
 
-        .review h1 {
-            font-size: 24px;
-            font-weight: bold;
-           margin-bottom: 8px;
-           margin-top: 8px;
-         }
+      .review-rating {
+        color: #f8b400;
+        font-size: 18px;
+        margin-bottom: 8px;
+      }
 
-        .review-rating {
-            color: #f8b400;
-            font-size: 18px;
-            margin-bottom: 8px;
-        }
-
-        .review-comment {
-            font-size: 16px;
-            line-height: 1.4;
-        }
+      .review-comment {
+        font-size: 16px;
+        line-height: 1.4;
+      }
     </style>
-</head>
-<body class="bodyAboutUs">
-    <div class ="bodyAboutUs_container">
-<div class="navBar" id="nv">
-<nav>
-    <i class="bi bi-justify" onclick="alert('Hello')" id ="hamMenu"></i>
-<ul>
-    <li><a href='index.html'>BALLINA</a></li>
-    <li><a href='menu.html'>MENU</a></li>
-    <li><a href='aboutus.html'>RRETH NESH</a></li>
-    <li><a href='contactus.html'>KONTAKTI</a></li>
-    <li><a href="https://www.google.com/maps/place/Flo's+Restaurant/@42.6596241,20.2923249,15z/data=!4m6!3m5!1s0x1352fd715bcd74b3:0xb13aa69e38cee452!8m2!3d42.6596241!4d20.2923249!16s%2Fg%2F1ptz59ckh?entry=ttu" target="_blank">LOKACIONI</a></li>
-    <li class="socialIcon"><a href="call:049-503-655"><i class="bi bi-telephone-forward"></i></a></li>
-    <li class="socialIcon"><a href="https://www.instagram.com/flospeja/"><i class="bi bi-instagram"></i></a></li>
-    <li class="socialIcon"><a href="mailto:info@flospeja.com"><i class="bi bi-envelope-fill"></i></a></li>
-    <span id="dateTimeSpan"></span>
-</ul>
-</nav>
-</div>
+  </head>
 
+  <body class="bodyAboutUs">
+    <div class="bodyAboutUs_container">
+      <div class="navBar" id="nv">
+        <nav>
+          <i class="bi bi-justify" onclick="alert('Hello')" id="hamMenu"></i>
+          <ul>
+            <li><a href="index.html">BALLINA</a></li>
+            <li><a href="menu.html">MENU</a></li>
+            <li><a href="aboutus.html">RRETH NESH</a></li>
+            <li><a href="contactus.html">KONTAKTI</a></li>
+            <li>
+              <a
+                href="https://www.google.com/maps/place/Flo's+Restaurant/@42.6596241,20.2923249,15z/data=!4m6!3m5!1s0x1352fd715bcd74b3:0xb13aa69e38cee452!8m2!3d42.6596241!4d20.2923249!16s%2Fg%2F1ptz59ckh?entry=ttu"
+                target="_blank"
+                >LOKACIONI</a
+              >
+            </li>
+            <li class="socialIcon">
+              <a href="call:049-503-655"
+                ><i class="bi bi-telephone-forward"></i
+              ></a>
+            </li>
+            <li class="socialIcon">
+              <a href="https://www.instagram.com/flospeja/"
+                ><i class="bi bi-instagram"></i
+              ></a>
+            </li>
+            <li class="socialIcon">
+              <a href="mailto:info@flospeja.com"
+                ><i class="bi bi-envelope-fill"></i
+              ></a>
+            </li>
+            <span id="dateTimeSpan"></span>
+          </ul>
+        </nav>
+      </div>
 
-    <div class="aboutusLogo">
-      <img src=".\Pics\logo_transparente.png" alt="" id="animeImg"/>
-    </div>
-  
-        <div class="row au-o-story">
-            <h1 class="h1-au">Restauranti nga Peja</h3>
-            <h1 class="h2-story" style="font-family: serif;"><b>TREGIMI YN&Euml</b></h2>
+      <div class="aboutusLogo">
+        <img src=".\Pics\logo_transparente.png" alt="" id="animeImg" />
+      </div>
+
+      <div class="row au-o-story">
+        <h1 class="h1-au">Restauranti nga Peja</h1>
+        <h1 class="h2-story" style="font-family: serif">
+          <b>TREGIMI YN&Euml</b>
+        </h1>
+      </div>
+
+      <div class="backgroundpic1">
+        <div class="row paragraf_about_us">
+          <div class="p-au">
+            <p id="restaurantDescription">
+              Flo's Restaurant, e themeluar në vitin 2005, shpërthen si një
+              ngjarje e pasur në historinë tonë. Ky restorant, me një përvojë që
+              depërtonte në mbi një dekadë dhe gjysmë, është jo vetëm një perlë
+              e kuzhinës sonë, por edhe një destinacion i preferuar për
+              udhëtarët. Duke mbajtur me krenari vlerat tradicionale dhe duke
+              shërbyer ushqime të shijshme, Flo's ka rrëmbyer vend në zemrat e
+              të gjithë atyre që e kanë eksploruar. Me atmosferën e tij të
+              ngrohtë dhe pamjen e mrekullueshme natyrore, Flo's Restaurant
+              është një pjesë e mrekullueshme e historisë sonë, një rrëfim që
+              vazhdon të zhvillohet me çdo vizitë.
+            </p>
+          </div>
         </div>
+      </div>
 
-
-     
-        <div class="backgroundpic1">
-            <div class="row paragraf_about_us">
-                <div class="p-au">
-                    <p id="restaurantDescription">
-                        Flo's Restaurant, e themeluar në vitin 2005, shpërthen si një ngjarje e pasur në historinë tonë. Ky restorant, me një përvojë 
-                        që depërtonte në mbi një dekadë dhe gjysmë, është jo vetëm një perlë e kuzhinës sonë, por edhe një destinacion i preferuar për 
-                        udhëtarët. Duke mbajtur me krenari vlerat tradicionale dhe duke shërbyer ushqime të shijshme, Flo's ka rrëmbyer vend në zemrat 
-                        e të gjithë atyre që e kanë eksploruar. Me atmosferën e tij të ngrohtë dhe pamjen e mrekullueshme natyrore, Flo's Restaurant
-                        është një pjesë e mrekullueshme e historisë sonë, një rrëfim që vazhdon të zhvillohet me çdo vizitë.
-                    </p>
-                </div>
-
-                <script>
-                 
-                    $('.h2-story').hover(
-                        function() {
-                            $(this).css('color', '#c58f59');
-                        },
-                        function() {
-                            $(this).css('color', ''); 
-                        }
-                    );
-                </script>
-
-                <script>
-                         $(document).ready(function () {
-                         $('.h2-story').click(function () {
-                        $('#restaurantDescription').slideToggle();
-                         });
-                     });
-                </script>
-            
-                <script>
-                    var restaurantDescription = document.getElementById('restaurantDescription').innerHTML;
-            
-                    var firstWordsMatch = restaurantDescription.match(/^\s*([\S]+)/);
-            
-                    if (firstWordsMatch) {
-                        var modifiedDescription = restaurantDescription.replace(firstWordsMatch[1], firstWordsMatch[1].toUpperCase());
-            
-                        document.getElementById('restaurantDescription').innerHTML = modifiedDescription;
-                    }
-                </script>
-            </div>
+      <div class="aboutus_row1">
+        <div class="rec">
+          <h3 class="recetat">RECETAT</h3>
+          <span class="rec-paragraf1"
+            ><mark> Recetat tona</mark> nuk janë thjesht një kombinim i shijeve
+            - ato janë një rrëfim i pasionuar që ka evoluar nga një pasion i
+            thellë për shkencën dhe artin e gatimit. Çdo element i përdorur në
+            gatim është zgjedhur me kujdes, duke përqafuar produktet e freskëta
+            dhe sezonale për të siguruar cilësi të lartë në çdo pjatë.
+            <p class="rec-paragraf2">
+              Eksploroni shije autentike në
+              <abbr title="Kuzhinë Shqiptare">KSH</abbr>, me gatime tradicionale
+              shqiptare të përgatitura me kujdes.
+            </p>
+          </span>
         </div>
+      </div>
+      <div class="backgroundpic2">
+        <div class="image-container_recetat">
+          <img src="./Pics/libri.jpg" width="650" height="450" />
+          <img src="./Pics/freceta1.jpg" width="650" height="450" />
+        </div>
+      </div>
 
-        
-
-    <div class="aboutus_row1">
-<div class="rec">
-    <h3 class="recetat">RECETAT</h3>
-    <p class="rec-paragraf1"><mark> Recetat tona</mark> nuk janë thjesht një kombinim i shijeve - ato janë një rrëfim i pasionuar që ka evoluar nga një pasion i thellë 
-        për shkencën dhe artin e gatimit. Çdo element i përdorur në gatim është zgjedhur me kujdes, duke përqafuar produktet e freskëta dhe sezonale
-        për të siguruar cilësi të lartë në çdo pjatë.
-        <p class="rec-paragraf2">Eksploroni shije autentike në <abbr title="Kuzhinë Shqiptare">KSH</abbr>, me gatime tradicionale shqiptare të përgatitura me kujdes.</p>
-    </p>
-    </div>
-</div>
-<div class="backgroundpic2">
-    <div class="image-container_recetat">
-        <img src="./Pics/libri.jpg" width="650" height="450">
-        <img src="./Pics/freceta1.jpg" width="650" height="450">
-    </div>
-</div>
-
-<script>
-    $(document).ready(function () {
-        $('.recetat, .ambienti-yne').hover(
-            function() {
-                anime({
-                    targets: this,
-                    color: '#c58f59',  
-                    duration: 500,  
-                    easing: 'easeInOutQuad' 
-                });
-            },
-            function() {
-                anime({
-                    targets: this,
-                    color: '',       
-                    duration: 500,
-                    easing: 'easeInOutQuad'
-                });
-            }
-        );
-    });
-</script>
-
-
-<div class="aboutus_row2">
-    <h3 class="ambienti-yne">AMBIENTI YN&Euml;</h3>
-    <p class="paragraf-ambienti">
-        <mark> Restauranti ynë </mark> është një destinacion i veçantë në qytetin e Pejës, një oazë e shijes dhe relaksimit ku gastronomia e shkëlqyer 
-        bashkohet me një ambient të bukur dhe një kafe të ngrohtë. Korza e Pejës është vendi ku shijojmë të kemi një lidhje të thellë me natyrën dhe
-        ku mikpritja e jashtëzakonshme është pjesë e identitetit tonë.Cilësia e ushqimit është në qendër të filozofisë sonë. Në menunë tonë gjeni një
-        bashkim të kreativitetit, traditave lokale dhe përdorimit të produkteve të freskëta dhe cilësore. Përveç shijeve të pasura, ofrojmë një 
-        ambient të bukur, ku detajet janë përcjellë me kujdes dhe shijes.
-        Kafetaria jonë, një hapësirë e veçantë brenda restorantit, është një vend ideal për t'i filluar ditën me një kafe aromatike dhe atmosferë të qetë. </p>
+      <div class="aboutus_row2">
+        <h3 class="ambienti-yne">AMBIENTI YN&Euml;</h3>
+        <p class="paragraf-ambienti">
+          <mark> Restauranti ynë </mark> është një destinacion i veçantë në
+          qytetin e Pejës, një oazë e shijes dhe relaksimit ku gastronomia e
+          shkëlqyer bashkohet me një ambient të bukur dhe një kafe të ngrohtë.
+          Korza e Pejës është vendi ku shijojmë të kemi një lidhje të thellë me
+          natyrën dhe ku mikpritja e jashtëzakonshme është pjesë e identitetit
+          tonë.Cilësia e ushqimit është në qendër të filozofisë sonë. Në menunë
+          tonë gjeni një bashkim të kreativitetit, traditave lokale dhe
+          përdorimit të produkteve të freskëta dhe cilësore. Përveç shijeve të
+          pasura, ofrojmë një ambient të bukur, ku detajet janë përcjellë me
+          kujdes dhe shijes. Kafetaria jonë, një hapësirë e veçantë brenda
+          restorantit, është një vend ideal për t'i filluar ditën me një kafe
+          aromatike dhe atmosferë të qetë.
+        </p>
         <p class="paragraf-amb">Falimnderit për vizitën!</p>
-    </div>
+      </div>
 
-<div class="backgroundpic3">
-<div class="image-container_ambienti">
-<img src="./Pics/r1.jpg" >
-<img src="./Pics/R2.jpg" >
-<img src="./Pics/R3.jpg" >
-<img src="./Pics/R4.jpg" >
-</div>
-</div>
-<br>
-<br>
-<div class="review1" id="reviews-container"></div>
-<div class="aboutus_rating">
-    <h2>Përshtypja juaj: </h2>
-    <div class="rating">
-      <span class="star" data-rating="1">☆</span>
-      <span class="star" data-rating="2">☆</span>
-      <span class="star" data-rating="3">☆</span>
-      <span class="star" data-rating="4">☆</span>
-      <span class="star" data-rating="5">☆</span>
-    </div>
-    <p>Përshtypja juaj: <span id="selected-rating">0</span> yje</p>
-  </div>
+      <div class="backgroundpic3">
+        <div class="image-container_ambienti">
+          <img src="./Pics/r1.jpg" />
+          <img src="./Pics/R2.jpg" />
+          <img src="./Pics/R3.jpg" />
+          <img src="./Pics/R4.jpg" />
+        </div>
+      </div>
+      <br />
+      <br />
+      <div class="review1" id="reviews-container"></div>
+      <div class="aboutus_rating">
+        <h2>Përshtypja juaj:</h2>
+        <div class="rating">
+          <span class="star" data-rating="1">☆</span>
+          <span class="star" data-rating="2">☆</span>
+          <span class="star" data-rating="3">☆</span>
+          <span class="star" data-rating="4">☆</span>
+          <span class="star" data-rating="5">☆</span>
+        </div>
+        <p>Përshtypja juaj: <span id="selected-rating">0</span> yje</p>
+      </div>
 
+      <button
+        id="hideRating"
+        style="display: block; margin: 0 auto; opacity: 0.8"
+      >
+        Hide Rating</button
+      ><br />
+
+      <div class="comment" style="text-align: center">
+        <button type="button" id="showCommentForm">
+          Klikoni këtu për të komentuar
+        </button>
+        <form id="commentForm" style="display: none">
+          <label for="comment-container"></label>
+          <input
+            type="text"
+            id="comment"
+            name="comment"
+            placeholder="Komenti juaj:"
+          />
+          <button type="button" id="submitComment">Submit</button>
+        </form>
+
+        <div id="successMessage" style="display: none">
+          <p>Faleminderit për komentin tuaj!</p>
+        </div>
+      </div>
+
+      <footer>
+        <div class="foot_div">
+          <div class="social">
+            <a href="https://www.instagram.com/flospeja/"
+              ><i class="icon ion-social-instagram"></i
+            ></a>
+            <a href="https://www.facebook.com/flospeja"
+              ><i class="icon ion-social-facebook"></i
+            ></a>
+          </div>
+          <div class="social">
+            <ul>
+              <li><a href="./index.html">BALLINA</a></li>
+              <li><a href="./menu.html">MENU</a></li>
+              <li><a href="#">RRETH NESH</a></li>
+              <li><a href="#">KONTAKTI</a></li>
+              <li><a href="./terms.html">POLITIKA PRIVATESISE</a></li>
+            </ul>
+          </div>
+          <div class="social">Flo's Restaurant</div>
+        </div>
+      </footer>
+    </div>
+    <script src="./UpdateTime.js"></script>
     <script>
-        var customerReviews = [
-            { name: "Liridon", rating: 4, comment: "Shërbim dhe ushqim i mrekullueshëm.", image: "./Pics/konsumator2.jpg" },
-            { name: "Klea", rating: 5, comment: "Atmosfera e mirë dhe ëmbëlsirat shumë të shijshme.", image: "./Pics/konsumator1.jpg" },
-            { name: "Elsa", rating: 5, comment: "Ambient i ngrohtë dhe shërbim i mahnitshëm.", image: "./Pics/konstumator3.jpg" },
-        ];
+      var customerReviews = [
+        {
+          name: "Liridon",
+          rating: 4,
+          comment: "Shërbim dhe ushqim i mrekullueshëm.",
+          image: "./Pics/konsumator2.jpg",
+        },
+        {
+          name: "Klea",
+          rating: 5,
+          comment: "Atmosfera e mirë dhe ëmbëlsirat shumë të shijshme.",
+          image: "./Pics/konsumator1.jpg",
+        },
+        {
+          name: "Elsa",
+          rating: 5,
+          comment: "Ambient i ngrohtë dhe shërbim i mahnitshëm.",
+          image: "./Pics/konstumator3.jpg",
+        },
+      ];
 
-   
-        var reviewsContainer = document.getElementById('reviews-container');
+      var reviewsContainer = document.getElementById("reviews-container");
 
-        customerReviews.forEach(function (review) {
-           
-            var reviewElement = document.createElement('div');
-            reviewElement.style.display='flex';
-            reviewElement.style.padding='50px';
-            reviewElement.style.margin='20px';
-            reviewElement.classList.add('review');
+      customerReviews.forEach(function (review) {
+        var reviewElement = document.createElement("div");
+        reviewElement.style.display = "flex";
+        reviewElement.style.padding = "50px";
+        reviewElement.style.margin = "20px";
+        reviewElement.classList.add("review");
 
-            var imgElement = document.createElement('img');
-            imgElement.src = review.image;
-            imgElement.alt = review.name + "'s Profile Picture";
+        var imgElement = document.createElement("img");
+        imgElement.src = review.image;
+        imgElement.alt = review.name + "'s Profile Picture";
 
-            var contentElement = document.createElement('div');
+        var contentElement = document.createElement("div");
 
-            var nameElement = document.createElement('h1');
-            nameElement.classList.add('review-name');
-            nameElement.textContent = review.name;
+        var nameElement = document.createElement("h1");
+        nameElement.classList.add("review-name");
+        nameElement.textContent = review.name;
 
-            var ratingElement = document.createElement('p');
-            ratingElement.classList.add('review-rating');
-            ratingElement.textContent = `Rating: ${review.rating}`;
+        var ratingElement = document.createElement("p");
+        ratingElement.classList.add("review-rating");
+        ratingElement.textContent = `Rating: ${review.rating}`;
 
-            var commentElement = document.createElement('p');
-            commentElement.classList.add('review-comment');
-            commentElement.textContent = `Komenti: "${review.comment}"`;
+        var commentElement = document.createElement("p");
+        commentElement.classList.add("review-comment");
+        commentElement.textContent = `Komenti: "${review.comment}"`;
 
-      
-            contentElement.appendChild(nameElement);
-            contentElement.appendChild(ratingElement);
-            contentElement.appendChild(commentElement);
+        contentElement.appendChild(nameElement);
+        contentElement.appendChild(ratingElement);
+        contentElement.appendChild(commentElement);
 
-            reviewElement.appendChild(imgElement);
-            reviewElement.appendChild(contentElement);
-            reviewsContainer.appendChild(reviewElement);
+        reviewElement.appendChild(imgElement);
+        reviewElement.appendChild(contentElement);
+        reviewsContainer.appendChild(reviewElement);
+      });
+      const stars = document.querySelectorAll(".star");
+      const selectedRating = document.getElementById("selected-rating");
+
+      stars.forEach((star) => {
+        star.addEventListener("click", () => {
+          const rating = parseInt(star.getAttribute("data-rating"));
+          selectedRating.textContent = rating;
+
+          for (let i = 0; i < rating; i++) {
+            stars[i].classList.add("selected");
+          }
+
+          for (let i = rating; i < stars.length; i++) {
+            stars[i].classList.remove("selected");
+          }
         });
-        const stars = document.querySelectorAll('.star');
-const selectedRating = document.getElementById('selected-rating');
+      });
+    </script>
+    <script>
+      $(document).ready(function () {
+        $("#showCommentForm").click(function () {
+          $("#commentForm").show();
+        });
 
-stars.forEach((star) => {
-  star.addEventListener('click', () => {
-    const rating = parseInt(star.getAttribute('data-rating'));
-    selectedRating.textContent = rating;
+        $("#submitComment").click(function () {
+          $("#commentForm").hide();
+          $("#successMessage").show();
+        });
+      });
 
-  
-    for (let i = 0; i < rating; i++) {
-      stars[i].classList.add('selected');
-    }
+      $(document).ready(function () {
+        $("button#hideRating").click(function () {
+          $(".aboutus_rating").hide("slow", function () {
+            alert("The rating part is now hidden");
+          });
+        });
+      });
 
-    
-    for (let i = rating; i < stars.length; i++) {
-      stars[i].classList.remove('selected');
-    }
-  });
-});
+      $(document).ready(function () {
+        var ambientiContent = $(".paragraf-ambienti").html();
+        console.log("Content of paragraf-ambienti:", ambientiContent);
+
+        $(".paragraf-ambienti").html(
+          ambientiContent +
+            "<p>Restoranti ynë ofron një atmosferë të ngrohtë dhe të sofistikuar për të kënaqur shijet tuaja.</p>"
+        );
+
+        $(".paragraf-ambienti").append("<p>Ju mirëpresim!</p>");
+
+        $(".paragraf-amb").remove();
+      });
     </script>
 
-
-<button id="hideRating" style="display: block; margin: 0 auto; opacity: 0.8;">Hide Rating</button><br>
-
-
-<div class="comment" style="text-align:center;">
-    <button type="button" id="showCommentForm">Klikoni këtu për të komentuar</button>
-    <form id="commentForm" style="display:none;">
-        <label for="comment-container"></label>
-        <input type="text" id="comment" name="comment" placeholder="Komenti juaj:">
-        <button type="button" id="submitComment">Submit</button>
-    </form>
-   
-    <div id="successMessage" style="display:none;">
-        <p>Faleminderit për komentin tuaj!</p>
-    </div>
-</div>
-<<<<<<< Updated upstream
-
-=======
-<script src="./UpdateTime.js"></script>
->>>>>>> Stashed changes
-<script>
-    $(document).ready(function () {
-        $('#showCommentForm').click(function () {
-            $('#commentForm').show();
+    <script src="./app.js"></script>
+    <script>
+      document
+        .getElementById("reservationForm")
+        .addEventListener("submit", function (event) {
+          event.preventDefault();
+          document.getElementById("reservationForm").style.display = "none";
+          document.getElementById("successMessage").style.display = "block";
         });
+    </script>
+    <script>
+      $(document).ready(function () {
+        $(".recetat, .ambienti-yne").hover(
+          function () {
+            anime({
+              targets: this,
+              color: "#c58f59",
+              duration: 500,
+              easing: "easeInOutQuad",
+            });
+          },
+          function () {
+            anime({
+              targets: this,
+              color: "",
+              duration: 500,
+              easing: "easeInOutQuad",
+            });
+          }
+        );
+      });
+    </script>
+    <script>
+      $(".h2-story").hover(
+        function () {
+          $(this).css("color", "#c58f59");
+        },
+        function () {
+          $(this).css("color", "");
+        }
+      );
+    </script>
 
-        $('#submitComment').click(function () {
-            $('#commentForm').hide();
-            $('#successMessage').show();
+    <script>
+      $(document).ready(function () {
+        $(".h2-story").click(function () {
+          $("#restaurantDescription").slideToggle();
         });
-    });
+      });
+    </script>
 
+    <script>
+      var restaurantDescription = document.getElementById(
+        "restaurantDescription"
+      ).innerHTML;
 
-    $(document).ready(function(){
-  $("button#hideRating").click(function(){
-    $(".aboutus_rating").hide("slow", function(){
-      alert("The rating part is now hidden");
-    });
-  });
-});
+      var firstWordsMatch = restaurantDescription.match(/^\s*([\S]+)/);
 
+      if (firstWordsMatch) {
+        var modifiedDescription = restaurantDescription.replace(
+          firstWordsMatch[1],
+          firstWordsMatch[1].toUpperCase()
+        );
 
-    $(document).ready(function () {
-        
-
-        // Example 1: Get content of an element
-        var ambientiContent = $('.paragraf-ambienti').html();
-        console.log('Content of paragraf-ambienti:', ambientiContent);
-
-        // Example 2: Set content of an element
-        // (This line sets new content while keeping the existing text)
-        $('.paragraf-ambienti').html(ambientiContent + '<p>Restoranti ynë ofron një atmosferë të ngrohtë dhe të sofistikuar për të kënaqur shijet tuaja.</p>');
-
-        // Example 3: Add a new element
-        $('.paragraf-ambienti').append('<p>Ju mirëpresim!</p>');
-
-        // Example 4: Remove an element (Assuming you have an element with class "someElementToRemove")
-        $('.paragraf-amb').remove();
-    });
-
-</script>
-
-
-
-<footer>
-    <div class="foot_div">
-      <div class="social">
-        <a href="https://www.instagram.com/flospeja/"
-          ><i class="icon ion-social-instagram"></i
-        ></a>
-        <a href="https://www.facebook.com/flospeja"
-          ><i class="icon ion-social-facebook"></i
-        ></a>
-      </div>
-      <div class="social">
-        <ul>
-          <li><a href="./index.html">BALLINA</a></li>
-          <li><a href="./menu.html">MENU</a></li>
-          <li><a href="#">RRETH NESH</a></li>
-          <li><a href="#">KONTAKTI</a></li>
-          <li><a href="./terms.html">POLITIKA PRIVATESISE</a></li>
-        </ul>
-      </div>
-      <div class="social">Flo's Restaurant</div>
-    </div>
-  </footer>
-
-  <script src="./app.js"></script>
-  <script>
-    document.getElementById('reservationForm').addEventListener('submit', function (event) {
-        event.preventDefault();
-        document.getElementById('reservationForm').style.display = 'none';
-        document.getElementById('successMessage').style.display = 'block';
-    });
-
-</script>
-</body>
+        document.getElementById("restaurantDescription").innerHTML =
+          modifiedDescription;
+      }
+    </script>
+  </body>
 </html>
-
-
-   
