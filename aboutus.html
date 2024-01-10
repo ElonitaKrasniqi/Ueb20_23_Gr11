@@ -207,8 +207,8 @@
         ku mikpritja e jashtëzakonshme është pjesë e identitetit tonë.Cilësia e ushqimit është në qendër të filozofisë sonë. Në menunë tonë gjeni një
         bashkim të kreativitetit, traditave lokale dhe përdorimit të produkteve të freskëta dhe cilësore. Përveç shijeve të pasura, ofrojmë një 
         ambient të bukur, ku detajet janë përcjellë me kujdes dhe shijes.
-        
         Kafetaria jonë, një hapësirë e veçantë brenda restorantit, është një vend ideal për t'i filluar ditën me një kafe aromatike dhe atmosferë të qetë. </p>
+        <p class="paragraf-amb">Falimnderit për vizitën!</p>
     </div>
 
 <div class="backgroundpic3">
@@ -316,6 +316,7 @@ stars.forEach((star) => {
         <p>Faleminderit për komentin tuaj!</p>
     </div>
 </div>
+
 <script>
     $(document).ready(function () {
         $('#showCommentForm').click(function () {
@@ -336,6 +337,26 @@ stars.forEach((star) => {
     });
   });
 });
+
+
+    $(document).ready(function () {
+        
+
+        // Example 1: Get content of an element
+        var ambientiContent = $('.paragraf-ambienti').html();
+        console.log('Content of paragraf-ambienti:', ambientiContent);
+
+        // Example 2: Set content of an element
+        // (This line sets new content while keeping the existing text)
+        $('.paragraf-ambienti').html(ambientiContent + '<p>Restoranti ynë ofron një atmosferë të ngrohtë dhe të sofistikuar për të kënaqur shijet tuaja.</p>');
+
+        // Example 3: Add a new element
+        $('.paragraf-ambienti').append('<p>Ju mirëpresim!</p>');
+
+        // Example 4: Remove an element (Assuming you have an element with class "someElementToRemove")
+        $('.paragraf-amb').remove();
+    });
+
 </script>
 
 
@@ -370,6 +391,7 @@ stars.forEach((star) => {
         document.getElementById('reservationForm').style.display = 'none';
         document.getElementById('successMessage').style.display = 'block';
     });
+
 </script>
 </body>
 </html>
