@@ -1082,5 +1082,46 @@ video {
     font-size: 15px;
   }
   
+  #popup{
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    height: 50px;
+    padding: 0;
+  }
+  .check_zbritja {
+    display: flex;
+    justify-content: center;
+    width: 70%;
+    height: 50px;
+    border-radius: 8px;
+    margin-top: 30px;
+    margin-left: 50px;
+    margin-bottom: 10px;
+    padding: 7px;
+  }
+  blockquote {
+      font-size: 20px;
+  }
+  blockquote:before {
+    content: "“";
+    visibility: hidden;
+  }
+  
+  blockquote:after {
+    content: "”";
+    visibility: hidden;
+  }
+  .imageMenu {
+    width: 220px;
+    flex: 0 0 auto;
+    transition: transform 0.3s;
+    margin-bottom: 20px;
+  }
+  .imageMenu img {
+    width: 200px;
+    height: 200px;
+  }
+  
 }
 
