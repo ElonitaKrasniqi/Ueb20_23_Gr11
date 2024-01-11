@@ -1125,6 +1125,51 @@ video {
     width: 200px;
     height: 200px;
   }
-  
+  .indexLogo img {
+    width: 250px;
+    height: 250px;
+}
+.index_link_rrethnesh {
+
+  width: 100px;
+  height: 580px;
+
+  padding-right: 50px;
+
+  margin-right: 100px;
+}
+.index_link_rrethnesh a{
+
+  font-size: 9px;
 }
 
+.rrethnesh_index p {
+  font-size: 18px;
+  padding-right: 10%;
+  padding-left: 15px;
+}
+.rrethnesh_index h1 {
+
+  font-size: 20px;
+
+  padding-top: 25px;
+  padding-left: 15px;
+}
+.rrethnesh_index h2 {
+  color: black;
+  text-align: left;
+  font-size: 30px;
+
+  padding-right: 20%;
+  padding-left: 15px;
+  margin-bottom: 12px;
+}
+.rrethnesh_index {
+  width: 80%;
+  height: 300px;
+  background-color: white;
+  padding-right: 70px;
+  padding-left: 50px;
+  margin: 0;
+}
+}
