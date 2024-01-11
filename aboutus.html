@@ -308,7 +308,12 @@
 
           var ratingElement = document.createElement("p");
           ratingElement.classList.add("review-rating");
-          ratingElement.textContent = `Rating: ${review.rating}`;
+          ratingElement.textContent = `Rating: ${review.rating.toString()}`;
+          if (isNaN(review.rating)) {
+        ratingElement.textContent = "Rating: N/A";
+    } else {
+        ratingElement.textContent = `Rating: ${review.rating.toString()}`;
+    }
 
           var commentElement = document.createElement("p");
           commentElement.classList.add("review-comment");
