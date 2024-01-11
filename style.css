@@ -1032,3 +1032,55 @@ video {
   color: white;
   margin-left: 200px;
 }
+
+@media only screen and (max-width: 600px) {
+  .navBar {
+    display: flex;
+  }
+  i {
+    font-size: 15px;
+  }
+  .navBar nav li {
+    padding: 5px;
+    margin: 10px;
+  }
+  .menuLogo img {
+    width: 250px;
+    height: 250px;
+    
+  }
+  .hidden {
+    width: 200px;
+    padding: 10px;
+    margin: 5px;
+    height: 300px;
+  }
+  .circle_Photo {
+    width: 70px;
+    height: 70px;
+
+  }
+  .menuLogo_div {
+    height: 150px;
+    margin-top: 310px;
+  }
+  .menuLogo_div h1{
+    font-size: 20px;
+  }
+  .menuLogo_div span{
+    font-size: 20px !important;
+  }
+  .menuLogo_div svg{
+    width: 25px !important;
+    height: 25px !important;
+  }
+  .hidden h2{
+    font-size: 20px;
+    padding: 20px;
+  }
+  .food-item{
+    font-size: 15px;
+  }
+  
+}
+
