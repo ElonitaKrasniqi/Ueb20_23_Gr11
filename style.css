@@ -150,7 +150,7 @@ i {
   align-items: center;
   justify-content: center;
   margin-top: 110px;
-  background-color: #ebebeb;
+  background-color: #000000;
 }
 .menu_container {
   margin-top: 150px;
@@ -418,11 +418,13 @@ blockquote:after {
   margin-top: 180px;
   width: 100%;
   margin-bottom: 25px;
+ 
 }
 
 .h1-au {
   font-size: 40px;
   font-style: inherit;
+  
 }
 
 .h2-story {

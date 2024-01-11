@@ -272,63 +272,57 @@
       </footer>
     </div>
     <script src="./UpdateTime.js"></script>
+    <div id="reviews-container"></div>
     <script>
+      function Review(name, rating, comment, image) {
+          this.name = name;
+          this.rating = rating;
+          this.comment = comment;
+          this.image = image;
+      }
+
       var customerReviews = [
-        {
-          name: "Liridon",
-          rating: 4,
-          comment: "Shërbim dhe ushqim i mrekullueshëm.",
-          image: "./Pics/konsumator2.jpg",
-        },
-        {
-          name: "Klea",
-          rating: 5,
-          comment: "Atmosfera e mirë dhe ëmbëlsirat shumë të shijshme.",
-          image: "./Pics/konsumator1.jpg",
-        },
-        {
-          name: "Elsa",
-          rating: 5,
-          comment: "Ambient i ngrohtë dhe shërbim i mahnitshëm.",
-          image: "./Pics/konstumator3.jpg",
-        },
+          new Review("Liridon", 4, "Shërbim dhe ushqim i mrekullueshëm.", "./Pics/konsumator2.jpg"),
+          new Review("Klea", 5, "Atmosfera e mirë dhe ëmbëlsirat shumë të shijshme.", "./Pics/konsumator1.jpg"),
+          new Review("Elsa", 5, "Ambient i ngrohtë dhe shërbim i mahnitshëm.", "./Pics/konstumator3.jpg"),
       ];
 
       var reviewsContainer = document.getElementById("reviews-container");
 
       customerReviews.forEach(function (review) {
-        var reviewElement = document.createElement("div");
-        reviewElement.style.display = "flex";
+          var reviewElement = document.createElement("div");
+           reviewElement.style.display = "flex";
         reviewElement.style.padding = "50px";
         reviewElement.style.margin = "20px";
-        reviewElement.classList.add("review");
+          reviewElement.classList.add("review");
 
-        var imgElement = document.createElement("img");
-        imgElement.src = review.image;
-        imgElement.alt = review.name + "'s Profile Picture";
+          var imgElement = document.createElement("img");
+          imgElement.src = review.image;
+          imgElement.alt = review.name + "'s Profile Picture";
 
-        var contentElement = document.createElement("div");
+          var contentElement = document.createElement("div");
 
-        var nameElement = document.createElement("h1");
-        nameElement.classList.add("review-name");
-        nameElement.textContent = review.name;
+          var nameElement = document.createElement("h1");
+          nameElement.classList.add("review-name");
+          nameElement.textContent = review.name;
 
-        var ratingElement = document.createElement("p");
-        ratingElement.classList.add("review-rating");
-        ratingElement.textContent = `Rating: ${review.rating}`;
+          var ratingElement = document.createElement("p");
+          ratingElement.classList.add("review-rating");
+          ratingElement.textContent = `Rating: ${review.rating}`;
 
-        var commentElement = document.createElement("p");
-        commentElement.classList.add("review-comment");
-        commentElement.textContent = `Komenti: "${review.comment}"`;
+          var commentElement = document.createElement("p");
+          commentElement.classList.add("review-comment");
+          commentElement.textContent = `Komenti: "${review.comment}"`;
 
-        contentElement.appendChild(nameElement);
-        contentElement.appendChild(ratingElement);
-        contentElement.appendChild(commentElement);
+          contentElement.appendChild(nameElement);
+          contentElement.appendChild(ratingElement);
+          contentElement.appendChild(commentElement);
 
-        reviewElement.appendChild(imgElement);
-        reviewElement.appendChild(contentElement);
-        reviewsContainer.appendChild(reviewElement);
+          reviewElement.appendChild(imgElement);
+          reviewElement.appendChild(contentElement);
+          reviewsContainer.appendChild(reviewElement);
       });
+
       const stars = document.querySelectorAll(".star");
       const selectedRating = document.getElementById("selected-rating");
 
