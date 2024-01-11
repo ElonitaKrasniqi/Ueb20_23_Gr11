@@ -697,6 +697,7 @@ blockquote:after {
   animation: fadeIn 0.5s ease-in-out;
   margin-bottom: 500px;
   margin-top: 40px;
+  margin-right: 35px;
 }
 
 @keyframes fadeIn {
